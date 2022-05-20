@@ -16,3 +16,15 @@ Then check command line for loacal host address
 Vue Files Storage
 Find front end Vue files in 
 practical-test/resources/js/
+
+
+Colours:
+body blue colour - #1e2e50
+body white colour - #ffffff
+
+dark blue font - #293579
+link blue colours - #4d9bfe
+
+buttons - #2083fe
+
+

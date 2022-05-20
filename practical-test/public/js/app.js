@@ -5289,6 +5289,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _Assets_emailIcon_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Assets/emailIcon.png */ "./resources/Assets/emailIcon.png");
+/* harmony import */ var _Assets_callIcon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Assets/callIcon.png */ "./resources/Assets/callIcon.png");
+/* harmony import */ var _Assets_placeIcon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Assets/placeIcon.png */ "./resources/Assets/placeIcon.png");
 //
 //
 //
@@ -5412,10 +5415,64 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Home",
   data: function data() {
-    return {};
+    return {
+      emailIcon: _Assets_emailIcon_png__WEBPACK_IMPORTED_MODULE_0__["default"],
+      phoneIcon: _Assets_callIcon_png__WEBPACK_IMPORTED_MODULE_1__["default"],
+      placeIcon: _Assets_placeIcon_png__WEBPACK_IMPORTED_MODULE_2__["default"]
+    };
   },
   methods: {}
 });
@@ -10527,6 +10584,51 @@ defineJQueryPlugin(Toast);
 
 /***/ }),
 
+/***/ "./resources/Assets/callIcon.png":
+/*!***************************************!*\
+  !*** ./resources/Assets/callIcon.png ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/callIcon.png?184b772013ab96dae8246d7e43a03358");
+
+/***/ }),
+
+/***/ "./resources/Assets/emailIcon.png":
+/*!****************************************!*\
+  !*** ./resources/Assets/emailIcon.png ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/emailIcon.png?a9c45c00e324cfe93fb68ec5e7f6a98a");
+
+/***/ }),
+
+/***/ "./resources/Assets/placeIcon.png":
+/*!****************************************!*\
+  !*** ./resources/Assets/placeIcon.png ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/placeIcon.png?d1c40125f380914667cca42f29c127f2");
+
+/***/ }),
+
 /***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=style&index=0&id=f2b6376c&scoped=true&lang=css&":
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=style&index=0&id=f2b6376c&scoped=true&lang=css& ***!
@@ -10544,7 +10646,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.body[data-v-f2b6376c] {\n  /* display: grid;\n  grid-template-areas:\n    \"header header header header\"\n    \"left left right right\"\n    \"slim slim slim slim\"\n    \"footer footer footer footer\"; */\n}\n.pageHeader[data-v-f2b6376c] {\n  display: flex;\n  justify-content: flex-end;\n  padding-right: 10%;\n}\n.headerTab[data-v-f2b6376c] {\n  margin-right: 1rem;\n}\n.subscribeBlock[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n}\n.pageMain[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n}\n.searchFormBody[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n}\n.searchForm[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: column;\n}\n.pageLowerMain[data-v-f2b6376c] {\n  display: block;\n  justify-content: center;\n}\n.pageBottom[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n}\n.signUpForm[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.body[data-v-f2b6376c] {\n  /* display: grid;\n  grid-template-areas:\n    \"header header header header\"\n    \"left left right right\"\n    \"slim slim slim slim\"\n    \"footer footer footer footer\"; */\n}\n.pageHeader[data-v-f2b6376c] {\n  display: flex;\n  justify-content: flex-end;\n  padding-right: 10%;\n  background-color: #1e2e50;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.headerTab[data-v-f2b6376c] {\n  margin-right: 1rem;\n  color: #ffffff;\n}\n.subscribeBlock[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  margin-left: auto;\n  margin-right: auto;\n}\n.subscxribeBlockTitle[data-v-f2b6376c] {\n  font-size: large;\n  font-weight: bold;\n  color: #ffffff;\n}\n.pageMain[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n  background-color: #1e2e50;\n  padding-bottom: 5rem;\n  padding-top: 5rem;\n}\n.searchFormBody[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  background-color: #ffffff;\n  border-radius: 0.2rem;\n  padding: 1rem;\n  margin-left: auto;\n  margin-right: auto;\n}\n.searchForm[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: column;\n}\n.pageLowerMain[data-v-f2b6376c] {\n  padding-top: 5rem;\n  padding-bottom: 5rem;\n  display: flex;\n  justify-content: center;\n}\n.pageBottom[data-v-f2b6376c] {\n  /* display: flex;\n  flex-direction: row; */\n  /* columns: 2; */\n  display: grid;\n  grid-template-columns: 40% 60%;\n}\n.signUpForm[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n}\n.icons[data-v-f2b6376c] {\n  width: 1.2rem;\n}\n.largeTextBody[data-v-f2b6376c] {\n  font-size: large;\n  font-weight: bold;\n}\n.fadedTextMedium[data-v-f2b6376c] {\n  color: grey;\n  width: 80%;\n}\n.linkText[data-v-f2b6376c] {\n  color: blue;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28555,118 +28657,158 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "body" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
+    _c("div", { staticClass: "pageBottom" }, [
+      _c("div", [
+        _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Adress")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "fadedTextMedium" }, [
+          _c("img", { staticClass: "icons", attrs: { src: _vm.placeIcon } }),
+          _c("span", [_vm._v("Dartford, Kent")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "fadedTextMedium" }, [
+          _c("img", { staticClass: "icons", attrs: { src: _vm.phoneIcon } }),
+          _c("span", [_vm._v("0203 633 1775")]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "fadedTextMedium" }, [
+          _c("img", { staticClass: "icons", attrs: { src: _vm.emailIcon } }),
+          _c("span", [_vm._v("hello@example.com")]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _vm._m(3),
+    ]),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "body" }, [
-      _c("div", { staticClass: "pageHeader" }, [
-        _c("span", { staticClass: "headerTab" }, [_vm._v("Header")]),
-        _vm._v(" "),
-        _c("span", { staticClass: "headerTab" }, [_vm._v("Header")]),
-        _vm._v(" "),
-        _c("span", { staticClass: "headerTab" }, [_vm._v("Header")]),
-        _vm._v(" "),
-        _c("span", { staticClass: "headerTab" }, [_vm._v("Header")]),
-        _vm._v(" "),
-        _c("button", { staticClass: "tabButton" }, [_vm._v("Sign In")]),
-      ]),
+    return _c("div", { staticClass: "pageHeader" }, [
+      _c("span", { staticClass: "headerTab" }, [_vm._v("Header")]),
       _vm._v(" "),
-      _c("div", { staticClass: "pageMain" }, [
-        _c("div", { staticClass: "subscribeBlock" }, [
-          _c("div", [_vm._v("buy and sell cryptocurrency")]),
-          _vm._v(" "),
-          _c("div", [
-            _vm._v(
-              "\n        Fast and secure way to purchace or exchange 150+ cryptocurrancies\n      "
-            ),
-          ]),
-          _vm._v(" "),
-          _c("div", [
-            _c("input", {
-              attrs: { type: "text", placeholder: "Subscribe Now" },
-            }),
-            _vm._v(" "),
-            _c("button", [_vm._v("->")]),
-          ]),
+      _c("span", { staticClass: "headerTab" }, [_vm._v("Header")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "headerTab" }, [_vm._v("Header")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "headerTab" }, [_vm._v("Header")]),
+      _vm._v(" "),
+      _c("button", { staticClass: "tabButton" }, [_vm._v("Sign In")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "pageMain" }, [
+      _c("div", { staticClass: "subscribeBlock" }, [
+        _c("div", { staticClass: "subscxribeBlockTitle" }, [
+          _vm._v("Buy and sell cryptocurrency"),
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "searchFormBody" }, [
-          _c("div", [_vm._v("Send")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "searchForm" }, [
-            _c("div", [
-              _c("input", { attrs: { type: "text", placeholder: "USD" } }),
-              _vm._v(" "),
-              _c("input", {
-                attrs: { type: "text", placeholder: "0.021481C" },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", [
-              _c("input", { attrs: { type: "text", placeholder: "BTC" } }),
-              _vm._v(" "),
-              _c("input", {
-                attrs: { type: "text", placeholder: "0.021481C" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("span", [_vm._v("1USD - 0.0000000888 BTC")]),
-          _c("span", [_vm._v("Exeptions")]),
-          _vm._v(" "),
-          _c("span", [_vm._v("No extra Fees")]),
-          _vm._v(" "),
-          _c("button", [_vm._v("Buy Now")]),
-          _vm._v(" "),
-          _c("div"),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "pageLowerMain" }, [
-        _c("div", [_c("div", [_vm._v("Ask Questions")])]),
-        _vm._v(" "),
-        _c("div", [_c("div", [_vm._v("Let ud hear from you directly!")])]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "pageBottom" }, [
-        _c("div", [
-          _c("div", [_vm._v("Adress")]),
-          _vm._v(" "),
-          _c("div", [_c("span", [_vm._v("Dartford, Kent")])]),
-          _vm._v(" "),
-          _c("div", [_c("span", [_vm._v("0203 633 1775")])]),
-          _vm._v(" "),
-          _c("div", [_c("span", [_vm._v("hello@example.com")])]),
+        _c("div", { staticClass: "fadedTextMedium" }, [
+          _vm._v(
+            "\n        Fast and secure way to purchace or exchange 150+ cryptocurrancies\n      "
+          ),
         ]),
         _vm._v(" "),
         _c("div", [
-          _c("div", { staticClass: "signUpForm" }, [
-            _c("div", [
-              _c("div", [_vm._v("Full name")]),
-              _vm._v(" "),
-              _c("input", { attrs: { placeholder: "Full Name" } }),
-            ]),
-            _vm._v(" "),
-            _c("div", [
-              _c("div", [_vm._v("Email")]),
-              _vm._v(" "),
-              _c("input", { attrs: { placeholder: "hello@example.com" } }),
-            ]),
-          ]),
+          _c("input", {
+            attrs: { type: "text", placeholder: "Subscribe Now" },
+          }),
           _vm._v(" "),
-          _c("div", [
-            _c("input", {
-              attrs: { placeholder: "Tell us what er can help you with!" },
-            }),
-          ]),
-          _vm._v(" "),
-          _c("div", [_c("button", [_vm._v("Send Message")])]),
+          _c("button", [_vm._v("->")]),
         ]),
       ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "searchFormBody" }, [
+        _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Send")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "searchForm" }, [
+          _c("div", [
+            _c("input", { attrs: { type: "text", placeholder: "USD" } }),
+            _vm._v(" "),
+            _c("input", { attrs: { type: "text", placeholder: "0.021481C" } }),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Recive")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "searchForm" }, [
+          _c("div", [
+            _c("input", { attrs: { type: "text", placeholder: "BTC" } }),
+            _vm._v(" "),
+            _c("input", { attrs: { type: "text", placeholder: "0.021481C" } }),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("span", { staticClass: "fadedTextMedium" }, [
+          _vm._v("1USD - 0.0000000888 BTC"),
+        ]),
+        _vm._v(" "),
+        _c("span", { staticClass: "linkText" }, [_vm._v("Exeptions")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "linkText" }, [_vm._v("No extra Fees")]),
+        _vm._v(" "),
+        _c("button", { staticClass: "searchFormButtom" }, [_vm._v("Buy Now")]),
+        _vm._v(" "),
+        _c("div"),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "pageLowerMain" }, [
+      _c("div", [
+        _c("div", { staticClass: "fadedTextMedium" }, [
+          _vm._v("Ask Questions"),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", [
+        _c("div", { staticClass: "largeTextBody" }, [
+          _vm._v("Let ud hear from you directly!"),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("div", { staticClass: "signUpForm" }, [
+        _c("div", [
+          _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Full name")]),
+          _vm._v(" "),
+          _c("input", { attrs: { placeholder: "Full Name" } }),
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Email")]),
+          _vm._v(" "),
+          _c("input", { attrs: { placeholder: "hello@example.com" } }),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", [
+        _c("textarea", {
+          attrs: { placeholder: "Tell us what er can help you with!" },
+        }),
+      ]),
+      _vm._v(" "),
+      _c("div", [_c("button", [_vm._v("Send Message")])]),
     ])
   },
 ]
