@@ -11,3 +11,8 @@ Run Vue - npm run watch
 Run Lavarel - php artisan serve
 
 Then check command line for loacal host address
+
+
+Vue Files Storage
+Find front end Vue files in 
+practical-test/resources/js/
