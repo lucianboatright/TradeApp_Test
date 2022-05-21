@@ -5292,6 +5292,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Assets_emailIcon_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Assets/emailIcon.png */ "./resources/Assets/emailIcon.png");
 /* harmony import */ var _Assets_callIcon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Assets/callIcon.png */ "./resources/Assets/callIcon.png");
 /* harmony import */ var _Assets_placeIcon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Assets/placeIcon.png */ "./resources/Assets/placeIcon.png");
+/* harmony import */ var _searchForm_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./searchForm.vue */ "./resources/js/components/searchForm.vue");
+/* harmony import */ var _messageForm_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./messageForm.vue */ "./resources/js/components/messageForm.vue");
 //
 //
 //
@@ -5449,193 +5451,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+
 
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Home",
+  components: {
+    SearchForm: _searchForm_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
+    MessageForm: _messageForm_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
+  },
   data: function data() {
     return {
-      validation: false,
-      SendMessage: {
-        name: "",
-        email: "",
-        message: ""
-      },
       emailIcon: _Assets_emailIcon_png__WEBPACK_IMPORTED_MODULE_0__["default"],
       phoneIcon: _Assets_callIcon_png__WEBPACK_IMPORTED_MODULE_1__["default"],
       placeIcon: _Assets_placeIcon_png__WEBPACK_IMPORTED_MODULE_2__["default"]
     };
   },
-  methods: {
-    sendMessage: function sendMessage(e) {
-      e.preventDefault();
-
-      if (this.SendMessage.name != "" && this.SendMessage.email != "" && this.SendMessage.message != "") {
-        console.log(this.SendMessage);
-        this.validation = false;
-      } else {
-        this.validation = true;
-      }
-    },
-    SignInClick: function SignInClick() {
-      this.$router.push("/signupform");
-    }
-  }
+  methods: {}
 });
 
 /***/ }),
@@ -5674,13 +5508,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -5688,10 +5515,7 @@ __webpack_require__.r(__webpack_exports__);
       sent: false,
       ContactForm: {
         name: "",
-        email: "" // password: "",
-        // phone: "",
-        // subject: "",
-
+        email: ""
       }
     };
   },
@@ -5712,6 +5536,68 @@ __webpack_require__.r(__webpack_exports__);
         this.varified = true;
       }
     }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/messageForm.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/messageForm.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  methods: {
+    sendMessage: function sendMessage(e) {
+      e.preventDefault();
+
+      if (this.SendMessage.name != "" && this.SendMessage.email != "" && this.SendMessage.message != "") {
+        console.log(this.SendMessage);
+        this.validation = false;
+      } else {
+        this.validation = true;
+      }
+    },
+    SignInClick: function SignInClick() {
+      this.$router.push("/signupform");
+    }
+  },
+  data: function data() {
+    return {
+      validation: false,
+      SendMessage: {
+        name: "",
+        email: "",
+        message: ""
+      }
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/searchForm.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/searchForm.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      count: 0
+    };
   }
 });
 
@@ -10891,7 +10777,55 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.body[data-v-f2b6376c] {\n}\n.pageHeader[data-v-f2b6376c] {\n  display: flex;\n  justify-content: flex-end;\n  padding-right: 10%;\n  background-color: #1e2e50;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.headerTab[data-v-f2b6376c] {\n  margin-right: 1rem;\n  color: #ffffff;\n}\n.tabSignUpButton[data-v-f2b6376c] {\n  background-color: #ffffff;\n  border: #4d9bfe solid 0.5px;\n  border-radius: 0.2rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n}\n.subscribeBlock[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  margin-left: auto;\n  margin-right: auto;\n  width: 25rem;\n}\n.subscribeBlock input[data-v-f2b6376c] {\n  cursor: pointer;\n  border: 1px solid #ccc;\n  border-radius: 0.2rem;\n  padding-left: 0.5rem;\n}\n.subscxribeBlockTitle[data-v-f2b6376c] {\n  font-size: large;\n  font-weight: bold;\n  color: #ffffff;\n}\n.marginTop1[data-v-f2b6376c] {\n  margin-top: 1rem;\n}\n.subscribeArrowButton[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  border: none;\n  padding-left: 0.8rem;\n  padding-right: 0.8rem;\n  padding-top: 0.17rem;\n  padding-bottom: 0.15rem;\n  color: #ffffff;\n  border-radius: 0.1rem;\n}\n.pageMain[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n  background-color: #1e2e50;\n  padding-bottom: 5rem;\n  padding-top: 5rem;\n}\n.searchFormBody[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  background-color: #ffffff;\n  border-radius: 0.2rem;\n  padding: 1rem;\n  margin-left: auto;\n  margin-right: auto;\n}\n.searchForm[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: column;\n}\n.searchFormInputs[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n}\n.searchForm input[data-v-f2b6376c]:first-child {\n  border-top-left-radius: 0.2rem;\n  border-bottom-left-radius: 0.2rem;\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n  padding-left: 0.5rem;\n}\n.searchForm input[data-v-f2b6376c]:last-child {\n  border-top-right-radius: 0.2rem;\n  border-bottom-right-radius: 0.2rem;\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n  padding-left: 0.5rem;\n}\n.searchForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n}\n.searchFormButtom[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  width: 100%;\n  border-radius: 0.2rem;\n  border: none;\n  color: #ffffff;\n  font-weight: bold;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-top: 0.5rem;\n}\n.pageLowerMain[data-v-f2b6376c] {\n  padding-top: 5rem;\n  padding-bottom: 5rem;\n  text-align: center;\n}\n.pageBottom[data-v-f2b6376c] {\n  display: grid;\n  grid-template-columns: 40% 60%;\n  margin-bottom: 5rem;\n}\n.addressSection[data-v-f2b6376c] {\n  margin-left: auto;\n  margin-right: auto;\n  width: 12.5rem;\n}\n.addressSection div[data-v-f2b6376c] {\n  margin-top: 0.5rem;\n}\n.addressSection img[data-v-f2b6376c] {\n  margin-right: 0.25rem;\n}\n.signUpFormBody[data-v-f2b6376c] {\n  width: 100%;\n}\n.signUpForm[data-v-f2b6376c] {\n  -moz-columns: 2;\n       columns: 2;\n  width: 80%;\n}\n.signUpForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-bottom: 0.25rem;\n  width: 100%;\n}\n.signUpFormBody textarea[data-v-f2b6376c] {\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  width: 80%;\n  height: 100px;\n  box-sizing: border-box;\n  border-radius: 4px;\n  font-size: 16px;\n}\n.signUpFormButton[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  color: #ffffff;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  border: none;\n  border-radius: 0.1rem;\n  margin-top: 0.2rem;\n  font-size: small;\n}\n.alertMessage[data-v-f2b6376c] {\n  font-size: large;\n  color: crimson;\n}\n.icons[data-v-f2b6376c] {\n  width: 1.2rem;\n}\n.largeTextBody[data-v-f2b6376c] {\n  font-size: x-large;\n  font-weight: bold;\n  color: #293579;\n}\n.fadedTextMediumGrey[data-v-f2b6376c] {\n  color: grey;\n}\n.fadedTextMediumBlue[data-v-f2b6376c] {\n  color: #7184ad;\n}\n.linkText[data-v-f2b6376c] {\n  color: blue;\n}\n.marginLeft[data-v-f2b6376c] {\n  margin-left: 0.4rem;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.body[data-v-f2b6376c] {\n}\n.pageHeader[data-v-f2b6376c] {\n  display: flex;\n  justify-content: flex-end;\n  padding-right: 10%;\n  background-color: #1e2e50;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.headerTab[data-v-f2b6376c] {\n  margin-right: 1rem;\n  color: #ffffff;\n}\n.tabSignUpButton[data-v-f2b6376c] {\n  background-color: #ffffff;\n  border: #4d9bfe solid 0.5px;\n  border-radius: 0.2rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n}\n.subscribeBlock[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  margin-left: auto;\n  margin-right: auto;\n  width: 25rem;\n}\n.subscribeBlock input[data-v-f2b6376c] {\n  cursor: pointer;\n  border: 1px solid #ccc;\n  border-radius: 0.2rem;\n  padding-left: 0.5rem;\n}\n.subscxribeBlockTitle[data-v-f2b6376c] {\n  font-size: large;\n  font-weight: bold;\n  color: #ffffff;\n}\n.marginTop1[data-v-f2b6376c] {\n  margin-top: 1rem;\n}\n.subscribeArrowButton[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  border: none;\n  padding-left: 0.8rem;\n  padding-right: 0.8rem;\n  padding-top: 0.17rem;\n  padding-bottom: 0.15rem;\n  color: #ffffff;\n  border-radius: 0.1rem;\n}\n.pageMain[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n  background-color: #1e2e50;\n  padding-bottom: 5rem;\n  padding-top: 5rem;\n}\n.pageLowerMain[data-v-f2b6376c] {\n  padding-top: 5rem;\n  padding-bottom: 5rem;\n  text-align: center;\n}\n.pageBottom[data-v-f2b6376c] {\n  display: grid;\n  grid-template-columns: 40% 60%;\n  margin-bottom: 5rem;\n}\n.addressSection[data-v-f2b6376c] {\n  margin-left: auto;\n  margin-right: auto;\n  width: 12.5rem;\n}\n.addressSection div[data-v-f2b6376c] {\n  margin-top: 0.5rem;\n}\n.addressSection img[data-v-f2b6376c] {\n  margin-right: 0.25rem;\n}\n.icons[data-v-f2b6376c] {\n  width: 1.2rem;\n}\n.largeTextBody[data-v-f2b6376c] {\n  font-size: x-large;\n  font-weight: bold;\n  color: #293579;\n}\n.fadedTextMediumGrey[data-v-f2b6376c] {\n  color: grey;\n}\n.fadedTextMediumBlue[data-v-f2b6376c] {\n  color: #7184ad;\n}\n.linkText[data-v-f2b6376c] {\n  color: blue;\n}\n.marginLeft[data-v-f2b6376c] {\n  margin-left: 0.4rem;\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/messageForm.vue?vue&type=style&index=0&id=71e8baf0&scoped=true&lang=css&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/messageForm.vue?vue&type=style&index=0&id=71e8baf0&scoped=true&lang=css& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n.signUpFormBody[data-v-71e8baf0] {\n  width: 100%;\n}\n.signUpForm[data-v-71e8baf0] {\n  -moz-columns: 2;\n       columns: 2;\n  width: 80%;\n}\n.signUpForm input[data-v-71e8baf0] {\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-bottom: 0.25rem;\n  width: 100%;\n}\n.signUpFormBody textarea[data-v-71e8baf0] {\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  width: 80%;\n  height: 100px;\n  box-sizing: border-box;\n  border-radius: 4px;\n  font-size: 16px;\n}\n.signUpFormButton[data-v-71e8baf0] {\n  background-color: #4d9bfe;\n  color: #ffffff;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  border: none;\n  border-radius: 0.1rem;\n  margin-top: 0.2rem;\n  font-size: small;\n}\n.alertMessage[data-v-71e8baf0] {\n  font-size: large;\n  color: crimson;\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/searchForm.vue?vue&type=style&index=0&id=641f8d17&scoped=true&lang=css&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/searchForm.vue?vue&type=style&index=0&id=641f8d17&scoped=true&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n.searchFormBody[data-v-641f8d17] {\n  display: block;\n  flex-direction: column;\n  background-color: #ffffff;\n  border-radius: 0.2rem;\n  padding: 1rem;\n  margin-left: auto;\n  margin-right: auto;\n}\n.searchForm[data-v-641f8d17] {\n  display: flex;\n  flex-direction: column;\n}\n.searchFormInputs[data-v-641f8d17] {\n  display: flex;\n  flex-direction: row;\n}\n.searchForm input[data-v-641f8d17]:first-child {\n  border-top-left-radius: 0.2rem;\n  border-bottom-left-radius: 0.2rem;\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n  padding-left: 0.5rem;\n}\n.searchForm input[data-v-641f8d17]:last-child {\n  border-top-right-radius: 0.2rem;\n  border-bottom-right-radius: 0.2rem;\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n  padding-left: 0.5rem;\n}\n.searchForm input[data-v-641f8d17] {\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n}\n.searchFormButtom[data-v-641f8d17] {\n  background-color: #4d9bfe;\n  width: 100%;\n  border-radius: 0.2rem;\n  border: none;\n  color: #ffffff;\n  font-weight: bold;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-top: 0.5rem;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28423,6 +28357,66 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/messageForm.vue?vue&type=style&index=0&id=71e8baf0&scoped=true&lang=css&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/messageForm.vue?vue&type=style&index=0&id=71e8baf0&scoped=true&lang=css& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_messageForm_vue_vue_type_style_index_0_id_71e8baf0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./messageForm.vue?vue&type=style&index=0&id=71e8baf0&scoped=true&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/messageForm.vue?vue&type=style&index=0&id=71e8baf0&scoped=true&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_messageForm_vue_vue_type_style_index_0_id_71e8baf0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_messageForm_vue_vue_type_style_index_0_id_71e8baf0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/searchForm.vue?vue&type=style&index=0&id=641f8d17&scoped=true&lang=css&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/searchForm.vue?vue&type=style&index=0&id=641f8d17&scoped=true&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_searchForm_vue_vue_type_style_index_0_id_641f8d17_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./searchForm.vue?vue&type=style&index=0&id=641f8d17&scoped=true&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/searchForm.vue?vue&type=style&index=0&id=641f8d17&scoped=true&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_searchForm_vue_vue_type_style_index_0_id_641f8d17_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_searchForm_vue_vue_type_style_index_0_id_641f8d17_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
@@ -28821,6 +28815,88 @@ component.options.__file = "resources/js/components/SignUpForm.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/messageForm.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/messageForm.vue ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _messageForm_vue_vue_type_template_id_71e8baf0_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./messageForm.vue?vue&type=template&id=71e8baf0&scoped=true& */ "./resources/js/components/messageForm.vue?vue&type=template&id=71e8baf0&scoped=true&");
+/* harmony import */ var _messageForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./messageForm.vue?vue&type=script&lang=js& */ "./resources/js/components/messageForm.vue?vue&type=script&lang=js&");
+/* harmony import */ var _messageForm_vue_vue_type_style_index_0_id_71e8baf0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./messageForm.vue?vue&type=style&index=0&id=71e8baf0&scoped=true&lang=css& */ "./resources/js/components/messageForm.vue?vue&type=style&index=0&id=71e8baf0&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+;
+
+
+/* normalize component */
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _messageForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _messageForm_vue_vue_type_template_id_71e8baf0_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _messageForm_vue_vue_type_template_id_71e8baf0_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  "71e8baf0",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/messageForm.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/searchForm.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/searchForm.vue ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _searchForm_vue_vue_type_template_id_641f8d17_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./searchForm.vue?vue&type=template&id=641f8d17&scoped=true& */ "./resources/js/components/searchForm.vue?vue&type=template&id=641f8d17&scoped=true&");
+/* harmony import */ var _searchForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./searchForm.vue?vue&type=script&lang=js& */ "./resources/js/components/searchForm.vue?vue&type=script&lang=js&");
+/* harmony import */ var _searchForm_vue_vue_type_style_index_0_id_641f8d17_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./searchForm.vue?vue&type=style&index=0&id=641f8d17&scoped=true&lang=css& */ "./resources/js/components/searchForm.vue?vue&type=style&index=0&id=641f8d17&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+;
+
+
+/* normalize component */
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _searchForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _searchForm_vue_vue_type_template_id_641f8d17_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _searchForm_vue_vue_type_template_id_641f8d17_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  "641f8d17",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/searchForm.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/AppComponent.vue?vue&type=script&lang=js&":
 /*!***************************************************************************!*\
   !*** ./resources/js/components/AppComponent.vue?vue&type=script&lang=js& ***!
@@ -28869,6 +28945,38 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/messageForm.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/messageForm.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_messageForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./messageForm.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/messageForm.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_messageForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/searchForm.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/searchForm.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_searchForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./searchForm.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/searchForm.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_searchForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/components/Home.vue?vue&type=style&index=0&id=f2b6376c&scoped=true&lang=css&":
 /*!***************************************************************************************************!*\
   !*** ./resources/js/components/Home.vue?vue&type=style&index=0&id=f2b6376c&scoped=true&lang=css& ***!
@@ -28878,6 +28986,32 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_style_index_0_id_f2b6376c_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Home.vue?vue&type=style&index=0&id=f2b6376c&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=style&index=0&id=f2b6376c&scoped=true&lang=css&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/messageForm.vue?vue&type=style&index=0&id=71e8baf0&scoped=true&lang=css&":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/js/components/messageForm.vue?vue&type=style&index=0&id=71e8baf0&scoped=true&lang=css& ***!
+  \**********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_messageForm_vue_vue_type_style_index_0_id_71e8baf0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./messageForm.vue?vue&type=style&index=0&id=71e8baf0&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/messageForm.vue?vue&type=style&index=0&id=71e8baf0&scoped=true&lang=css&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/searchForm.vue?vue&type=style&index=0&id=641f8d17&scoped=true&lang=css&":
+/*!*********************************************************************************************************!*\
+  !*** ./resources/js/components/searchForm.vue?vue&type=style&index=0&id=641f8d17&scoped=true&lang=css& ***!
+  \*********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_searchForm_vue_vue_type_style_index_0_id_641f8d17_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./searchForm.vue?vue&type=style&index=0&id=641f8d17&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/searchForm.vue?vue&type=style&index=0&id=641f8d17&scoped=true&lang=css&");
 
 
 /***/ }),
@@ -28929,6 +29063,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SignUpForm_vue_vue_type_template_id_0328d0c7___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SignUpForm_vue_vue_type_template_id_0328d0c7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./SignUpForm.vue?vue&type=template&id=0328d0c7& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SignUpForm.vue?vue&type=template&id=0328d0c7&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/messageForm.vue?vue&type=template&id=71e8baf0&scoped=true&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/components/messageForm.vue?vue&type=template&id=71e8baf0&scoped=true& ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_messageForm_vue_vue_type_template_id_71e8baf0_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_messageForm_vue_vue_type_template_id_71e8baf0_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_messageForm_vue_vue_type_template_id_71e8baf0_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./messageForm.vue?vue&type=template&id=71e8baf0&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/messageForm.vue?vue&type=template&id=71e8baf0&scoped=true&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/searchForm.vue?vue&type=template&id=641f8d17&scoped=true&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/searchForm.vue?vue&type=template&id=641f8d17&scoped=true& ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_searchForm_vue_vue_type_template_id_641f8d17_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_searchForm_vue_vue_type_template_id_641f8d17_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_searchForm_vue_vue_type_template_id_641f8d17_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./searchForm.vue?vue&type=template&id=641f8d17&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/searchForm.vue?vue&type=template&id=641f8d17&scoped=true&");
 
 
 /***/ }),
@@ -28999,135 +29167,42 @@ var render = function () {
       ),
     ]),
     _vm._v(" "),
-    _vm._m(0),
+    _c(
+      "div",
+      { staticClass: "pageMain" },
+      [_vm._m(0), _vm._v(" "), _c("SearchForm")],
+      1
+    ),
     _vm._v(" "),
     _vm._m(1),
     _vm._v(" "),
-    _c("div", { staticClass: "pageBottom" }, [
-      _c("div", { staticClass: "addressSection" }, [
-        _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Address")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "fadedTextMedium" }, [
-          _c("img", { staticClass: "icons", attrs: { src: _vm.placeIcon } }),
-          _c("span", [_vm._v("Dartford, Kent")]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "fadedTextMedium" }, [
-          _c("img", { staticClass: "icons", attrs: { src: _vm.phoneIcon } }),
-          _c("span", [_vm._v("0203 633 1775")]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "fadedTextMedium" }, [
-          _c("img", { staticClass: "icons", attrs: { src: _vm.emailIcon } }),
-          _c("span", [_vm._v("hello@example.com")]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c(
-        "form",
-        { staticClass: "signUpFormBody", on: { submit: _vm.sendMessage } },
-        [
-          _c("div", { staticClass: "signUpForm" }, [
-            _c("div", [
-              _c("div", { staticClass: "fadedTextMedium" }, [
-                _vm._v("Full name"),
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.SendMessage.name,
-                    expression: "SendMessage.name",
-                  },
-                ],
-                attrs: { type: "text", placeholder: "Full Name" },
-                domProps: { value: _vm.SendMessage.name },
-                on: {
-                  input: function ($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.SendMessage, "name", $event.target.value)
-                  },
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", [
-              _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Email")]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.SendMessage.email,
-                    expression: "SendMessage.email",
-                  },
-                ],
-                attrs: { type: "text", placeholder: "hello@example.com" },
-                domProps: { value: _vm.SendMessage.email },
-                on: {
-                  input: function ($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.SendMessage, "email", $event.target.value)
-                  },
-                },
-              }),
-            ]),
+    _c(
+      "div",
+      { staticClass: "pageBottom" },
+      [
+        _c("div", { staticClass: "addressSection" }, [
+          _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Address")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "fadedTextMedium" }, [
+            _c("img", { staticClass: "icons", attrs: { src: _vm.placeIcon } }),
+            _c("span", [_vm._v("Dartford, Kent")]),
           ]),
           _vm._v(" "),
-          _c("div", [
-            _c("textarea", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.SendMessage.message,
-                  expression: "SendMessage.message",
-                },
-              ],
-              attrs: {
-                type: "text",
-                placeholder: "Tell us what er can help you with!",
-              },
-              domProps: { value: _vm.SendMessage.message },
-              on: {
-                input: function ($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.SendMessage, "message", $event.target.value)
-                },
-              },
-            }),
+          _c("div", { staticClass: "fadedTextMedium" }, [
+            _c("img", { staticClass: "icons", attrs: { src: _vm.phoneIcon } }),
+            _c("span", [_vm._v("0203 633 1775")]),
           ]),
           _vm._v(" "),
-          _c("div", [
-            _c(
-              "button",
-              {
-                staticClass: "signUpFormButton",
-                attrs: { "data-text": "submit", type: "submit" },
-              },
-              [_vm._v("\n          Send Message\n        ")]
-            ),
-            _vm._v(" "),
-            _vm.validation
-              ? _c("div", { staticClass: "alertMessage" }, [
-                  _vm._v(
-                    "\n          Please Enter Into all Fields, Thank You\n        "
-                  ),
-                ])
-              : _vm._e(),
+          _c("div", { staticClass: "fadedTextMedium" }, [
+            _c("img", { staticClass: "icons", attrs: { src: _vm.emailIcon } }),
+            _c("span", [_vm._v("hello@example.com")]),
           ]),
-        ]
-      ),
-    ]),
+        ]),
+        _vm._v(" "),
+        _c("MessageForm"),
+      ],
+      1
+    ),
   ])
 }
 var staticRenderFns = [
@@ -29135,67 +29210,21 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "pageMain" }, [
-      _c("div", { staticClass: "subscribeBlock" }, [
-        _c("div", { staticClass: "subscxribeBlockTitle" }, [
-          _vm._v("Buy and sell cryptocurrency"),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "fadedTextMediumBlue" }, [
-          _vm._v(
-            "\n        Fast and secure way to purchace or exchange 150+ cryptocurrancies\n      "
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "marginTop1" }, [
-          _c("input", {
-            attrs: { type: "text", placeholder: "Subscribe Now" },
-          }),
-          _vm._v(" "),
-          _c("button", { staticClass: "subscribeArrowButton" }, [_vm._v("->")]),
-        ]),
+    return _c("div", { staticClass: "subscribeBlock" }, [
+      _c("div", { staticClass: "subscxribeBlockTitle" }, [
+        _vm._v("Buy and sell cryptocurrency"),
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "searchFormBody" }, [
-        _c("div", [
-          _c("label", { staticClass: "fadedTextMediumBlue" }, [_vm._v("Send")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "searchForm" }, [
-            _c("div", { staticClass: "searchFormInputs" }, [
-              _c("input", { attrs: { type: "text", placeholder: "USD" } }),
-              _vm._v(" "),
-              _c("input", {
-                attrs: { type: "text", placeholder: "0.021481C" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("label", { staticClass: "fadedTextMediumBlue" }, [
-            _vm._v("Recive"),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "searchForm" }, [
-            _c("div", { staticClass: "searchFormInputs" }, [
-              _c("input", { attrs: { type: "text", placeholder: "BTC" } }),
-              _vm._v(" "),
-              _c("input", {
-                attrs: { type: "text", placeholder: "0.021481C" },
-              }),
-            ]),
-          ]),
-        ]),
+      _c("div", { staticClass: "fadedTextMediumBlue" }, [
+        _vm._v(
+          "\n        Fast and secure way to purchace or exchange 150+ cryptocurrancies\n      "
+        ),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "marginTop1" }, [
+        _c("input", { attrs: { type: "text", placeholder: "Subscribe Now" } }),
         _vm._v(" "),
-        _c("span", { staticClass: "fadedTextMedium" }, [
-          _vm._v("1USD - 0.0000000888 BTC"),
-        ]),
-        _vm._v(" "),
-        _c("span", { staticClass: "linkText" }, [_vm._v("Exeptions")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "linkText" }, [_vm._v("No extra Fees")]),
-        _vm._v(" "),
-        _c("button", { staticClass: "searchFormButtom" }, [_vm._v("Buy Now")]),
-        _vm._v(" "),
-        _c("div"),
+        _c("button", { staticClass: "subscribeArrowButton" }, [_vm._v("->")]),
       ]),
     ])
   },
@@ -29319,6 +29348,202 @@ var render = function () {
   )
 }
 var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/messageForm.vue?vue&type=template&id=71e8baf0&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/messageForm.vue?vue&type=template&id=71e8baf0&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c(
+      "form",
+      { staticClass: "signUpFormBody", on: { submit: _vm.sendMessage } },
+      [
+        _c("div", { staticClass: "signUpForm" }, [
+          _c("div", [
+            _c("div", { staticClass: "fadedTextMedium" }, [
+              _vm._v("Full name"),
+            ]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.SendMessage.name,
+                  expression: "SendMessage.name",
+                },
+              ],
+              attrs: { type: "text", placeholder: "Full Name" },
+              domProps: { value: _vm.SendMessage.name },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.SendMessage, "name", $event.target.value)
+                },
+              },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", [
+            _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Email")]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.SendMessage.email,
+                  expression: "SendMessage.email",
+                },
+              ],
+              attrs: { type: "text", placeholder: "hello@example.com" },
+              domProps: { value: _vm.SendMessage.email },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.SendMessage, "email", $event.target.value)
+                },
+              },
+            }),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.SendMessage.message,
+                expression: "SendMessage.message",
+              },
+            ],
+            attrs: {
+              type: "text",
+              placeholder: "Tell us what er can help you with!",
+            },
+            domProps: { value: _vm.SendMessage.message },
+            on: {
+              input: function ($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.SendMessage, "message", $event.target.value)
+              },
+            },
+          }),
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "button",
+            {
+              staticClass: "signUpFormButton",
+              attrs: { "data-text": "submit", type: "submit" },
+            },
+            [_vm._v("\n        Send Message\n      ")]
+          ),
+          _vm._v(" "),
+          _vm.validation
+            ? _c("div", { staticClass: "alertMessage" }, [
+                _vm._v(
+                  "\n        Please Enter Into all Fields, Thank You\n      "
+                ),
+              ])
+            : _vm._e(),
+        ]),
+      ]
+    ),
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/searchForm.vue?vue&type=template&id=641f8d17&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/searchForm.vue?vue&type=template&id=641f8d17&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "searchFormBody" }, [
+      _c("div", [
+        _c("label", { staticClass: "fadedTextMediumBlue" }, [_vm._v("Send")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "searchForm" }, [
+          _c("div", { staticClass: "searchFormInputs" }, [
+            _c("input", { attrs: { type: "text", placeholder: "USD" } }),
+            _vm._v(" "),
+            _c("input", { attrs: { type: "text", placeholder: "0.021481C" } }),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("label", { staticClass: "fadedTextMediumBlue" }, [_vm._v("Recive")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "searchForm" }, [
+          _c("div", { staticClass: "searchFormInputs" }, [
+            _c("input", { attrs: { type: "text", placeholder: "BTC" } }),
+            _vm._v(" "),
+            _c("input", { attrs: { type: "text", placeholder: "0.021481C" } }),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("span", { staticClass: "fadedTextMedium" }, [
+        _vm._v("1USD - 0.0000000888 BTC"),
+      ]),
+      _vm._v(" "),
+      _c("span", { staticClass: "linkText" }, [_vm._v("Exeptions")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "linkText" }, [_vm._v("No extra Fees")]),
+      _vm._v(" "),
+      _c("button", { staticClass: "searchFormButtom" }, [_vm._v("Buy Now")]),
+      _vm._v(" "),
+      _c("div"),
+    ])
+  },
+]
 render._withStripped = true
 
 

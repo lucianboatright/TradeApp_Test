@@ -20,29 +20,7 @@
           <button class="subscribeArrowButton">-></button>
         </div>
       </div>
-      <div class="searchFormBody">
-        <div>
-          <label class="fadedTextMediumBlue">Send</label>
-          <div class="searchForm">
-            <div class="searchFormInputs">
-              <input type="text" placeholder="USD" />
-              <input type="text" placeholder="0.021481C" />
-            </div>
-          </div>
-          <label class="fadedTextMediumBlue">Recive</label>
-          <div class="searchForm">
-            <div class="searchFormInputs">
-              <input type="text" placeholder="BTC" />
-              <input type="text" placeholder="0.021481C" />
-            </div>
-          </div>
-        </div>
-        <span class="fadedTextMedium">1USD - 0.0000000888 BTC</span>
-        <span class="linkText">Exeptions</span>
-        <div class="linkText">No extra Fees</div>
-        <button class="searchFormButtom">Buy Now</button>
-        <div></div>
-      </div>
+      <SearchForm />
     </div>
     <div class="pageLowerMain">
       <div>
@@ -65,41 +43,7 @@
           <img class="icons" :src="emailIcon" /><span>hello@example.com</span>
         </div>
       </div>
-      <form v-on:submit="sendMessage" class="signUpFormBody">
-        <div class="signUpForm">
-          <div>
-            <div class="fadedTextMedium">Full name</div>
-            <input
-              type="text"
-              v-model="SendMessage.name"
-              placeholder="Full Name"
-            />
-          </div>
-          <div>
-            <div class="fadedTextMedium">Email</div>
-            <input
-              type="text"
-              v-model="SendMessage.email"
-              placeholder="hello@example.com"
-            />
-          </div>
-        </div>
-        <div>
-          <textarea
-            type="text"
-            v-model="SendMessage.message"
-            placeholder="Tell us what er can help you with!"
-          />
-        </div>
-        <div>
-          <button data-text="submit" type="submit" class="signUpFormButton">
-            Send Message
-          </button>
-          <div v-if="validation" class="alertMessage">
-            Please Enter Into all Fields, Thank You
-          </div>
-        </div>
-      </form>
+      <MessageForm />
     </div>
   </div>
 </template>
@@ -168,58 +112,6 @@
   padding-top: 5rem;
 }
 
-.searchFormBody {
-  display: block;
-  flex-direction: column;
-  background-color: #ffffff;
-  border-radius: 0.2rem;
-  padding: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-.searchForm {
-  display: flex;
-  flex-direction: column;
-}
-.searchFormInputs {
-  display: flex;
-  flex-direction: row;
-}
-.searchForm input:first-child {
-  border-top-left-radius: 0.2rem;
-  border-bottom-left-radius: 0.2rem;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  margin-bottom: 0.25rem;
-  width: 50%;
-  padding-left: 0.5rem;
-}
-.searchForm input:last-child {
-  border-top-right-radius: 0.2rem;
-  border-bottom-right-radius: 0.2rem;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  margin-bottom: 0.25rem;
-  width: 50%;
-  padding-left: 0.5rem;
-}
-.searchForm input {
-  cursor: pointer;
-  border: 1px solid #ccc;
-  margin-bottom: 0.25rem;
-  width: 50%;
-}
-.searchFormButtom {
-  background-color: #4d9bfe;
-  width: 100%;
-  border-radius: 0.2rem;
-  border: none;
-  color: #ffffff;
-  font-weight: bold;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  margin-top: 0.5rem;
-}
 .pageLowerMain {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -240,52 +132,6 @@
 }
 .addressSection img {
   margin-right: 0.25rem;
-}
-.signUpFormBody {
-  width: 100%;
-}
-.signUpForm {
-  columns: 2;
-  width: 80%;
-}
-.signUpForm input {
-  cursor: pointer;
-  border-radius: 0.2rem;
-  border: 1px solid #ccc;
-  padding-left: 0.8rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  margin-bottom: 0.25rem;
-  width: 100%;
-}
-.signUpFormBody textarea {
-  padding-left: 0.8rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  cursor: pointer;
-  border-radius: 0.2rem;
-  border: 1px solid #ccc;
-  width: 80%;
-  height: 100px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  font-size: 16px;
-}
-.signUpFormButton {
-  background-color: #4d9bfe;
-  color: #ffffff;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  border: none;
-  border-radius: 0.1rem;
-  margin-top: 0.2rem;
-  font-size: small;
-}
-.alertMessage {
-  font-size: large;
-  color: crimson;
 }
 .icons {
   width: 1.2rem;
@@ -313,40 +159,25 @@
 import emailIcon from "../../Assets/emailIcon.png";
 import phoneIcon from "../../Assets/callIcon.png";
 import placeIcon from "../../Assets/placeIcon.png";
+import SearchForm from "./searchForm.vue";
+import MessageForm from "./messageForm.vue";
+
 export default {
   name: "Home",
 
+  components: {
+    SearchForm,
+    MessageForm,
+  },
+
   data() {
     return {
-      validation: false,
-      SendMessage: {
-        name: "",
-        email: "",
-        message: "",
-      },
       emailIcon: emailIcon,
       phoneIcon: phoneIcon,
       placeIcon: placeIcon,
     };
   },
 
-  methods: {
-    sendMessage(e) {
-      e.preventDefault();
-      if (
-        this.SendMessage.name != "" &&
-        this.SendMessage.email != "" &&
-        this.SendMessage.message != ""
-      ) {
-        console.log(this.SendMessage);
-        this.validation = false;
-      } else {
-        this.validation = true;
-      }
-    },
-    SignInClick() {
-      this.$router.push("/signupform");
-    },
-  },
+  methods: {},
 };
 </script>

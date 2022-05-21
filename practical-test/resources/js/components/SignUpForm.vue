@@ -12,13 +12,6 @@
         v-model="ContactForm.email"
         placeholder="Email Address"
       />
-      <!-- <input
-        type="password"
-        v-model="ContactForm.phone"
-        placeholder="Password"
-      /> -->
-      <!-- <input type="text" v-model="ContactForm.subject" placeholder="Subject" />
-      <br /> -->
       <button data-text="submit" type="submit" class="btn btn-primary">
         Submit
       </button>
@@ -37,9 +30,6 @@ export default {
       ContactForm: {
         name: "",
         email: "",
-        // password: "",
-        // phone: "",
-        // subject: "",
       },
     };
   },
