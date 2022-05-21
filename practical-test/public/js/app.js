@@ -5644,20 +5644,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
+      varified: false,
       sent: false,
       ContactForm: {
         name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: ""
+        email: "" // password: "",
+        // phone: "",
+        // subject: "",
+
       }
     };
   },
@@ -5666,10 +5663,16 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       e.preventDefault();
-      console.log(this.ContactForm);
-      this.$axios.post("api/mailserver.php", querystring.stringify(this.ContactForm)).then(function (res) {
-        _this.sent = true;
-      });
+
+      if (this.ContactForm.name != "" && this.ContactForm.email != "") {
+        console.log(this.ContactForm);
+        this.$axios.post("../../../config/mail.php", querystring.stringify(this.ContactForm)).then(function (res) {
+          _this.sent = true;
+        });
+      } else {
+        console.log("You need to add something in all Boxes");
+        this.varified = true;
+      }
     }
   }
 });
@@ -29187,72 +29190,6 @@ var render = function () {
           },
         }),
         _vm._v(" "),
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.ContactForm.phone,
-              expression: "ContactForm.phone",
-            },
-          ],
-          attrs: { type: "text", placeholder: "Phone Number" },
-          domProps: { value: _vm.ContactForm.phone },
-          on: {
-            input: function ($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.$set(_vm.ContactForm, "phone", $event.target.value)
-            },
-          },
-        }),
-        _vm._v(" "),
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.ContactForm.subject,
-              expression: "ContactForm.subject",
-            },
-          ],
-          attrs: { type: "text", placeholder: "Subject" },
-          domProps: { value: _vm.ContactForm.subject },
-          on: {
-            input: function ($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.$set(_vm.ContactForm, "subject", $event.target.value)
-            },
-          },
-        }),
-        _vm._v(" "),
-        _c("textarea", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.ContactForm.message,
-              expression: "ContactForm.message",
-            },
-          ],
-          staticClass: "form-control",
-          attrs: { rows: "8", cols: "80" },
-          domProps: { value: _vm.ContactForm.message },
-          on: {
-            input: function ($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.$set(_vm.ContactForm, "message", $event.target.value)
-            },
-          },
-        }),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
         _c(
           "button",
           {
@@ -29261,6 +29198,12 @@ var render = function () {
           },
           [_vm._v("\n      Submit\n    ")]
         ),
+      ]),
+      _vm._v(" "),
+      _c("div", [
+        _vm.varified
+          ? _c("div", [_vm._v("Please Enter Name Email")])
+          : _vm._e(),
       ]),
     ],
     1

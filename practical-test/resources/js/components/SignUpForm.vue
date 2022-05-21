@@ -12,49 +12,54 @@
         v-model="ContactForm.email"
         placeholder="Email Address"
       />
-      <input
-        type="text"
+      <!-- <input
+        type="password"
         v-model="ContactForm.phone"
-        placeholder="Phone Number"
-      />
-      <input type="text" v-model="ContactForm.subject" placeholder="Subject" />
-      <textarea
-        v-model="ContactForm.message"
-        rows="8"
-        cols="80"
-        class="form-control"
-      >
-      </textarea>
-      <br />
+        placeholder="Password"
+      /> -->
+      <!-- <input type="text" v-model="ContactForm.subject" placeholder="Subject" />
+      <br /> -->
       <button data-text="submit" type="submit" class="btn btn-primary">
         Submit
       </button>
     </form>
+    <div>
+      <div v-if="varified">Please Enter Name Email</div>
+    </div>
   </div>
 </template>
         <script>
 export default {
   data() {
     return {
+      varified: false,
       sent: false,
       ContactForm: {
         name: "",
         email: "",
-        phone: "",
-        subject: "",
-        message: "",
+        // password: "",
+        // phone: "",
+        // subject: "",
       },
     };
   },
   methods: {
     sendForm(e) {
       e.preventDefault();
-      console.log(this.ContactForm);
-      this.$axios
-        .post("api/mailserver.php", querystring.stringify(this.ContactForm))
-        .then((res) => {
-          this.sent = true;
-        });
+      if (this.ContactForm.name != "" && this.ContactForm.email != "") {
+        console.log(this.ContactForm);
+        this.$axios
+          .post(
+            "../../../config/mail.php",
+            querystring.stringify(this.ContactForm)
+          )
+          .then((res) => {
+            this.sent = true;
+          });
+      } else {
+        console.log("You need to add something in all Boxes");
+        this.varified = true;
+      }
     },
   },
 };
