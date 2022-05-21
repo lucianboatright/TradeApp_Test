@@ -5546,6 +5546,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -10730,7 +10771,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.body[data-v-f2b6376c] {\n  /* display: grid;\n  grid-template-areas:\n    \"header header header header\"\n    \"left left right right\"\n    \"slim slim slim slim\"\n    \"footer footer footer footer\"; */\n}\n.pageHeader[data-v-f2b6376c] {\n  display: flex;\n  justify-content: flex-end;\n  padding-right: 10%;\n  background-color: #1e2e50;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.headerTab[data-v-f2b6376c] {\n  margin-right: 1rem;\n  color: #ffffff;\n}\n.tabSignUpButton[data-v-f2b6376c] {\n  background-color: #ffffff;\n  /* border: none; */\n  border: #4d9bfe solid 0.5px;\n  border-radius: 0.2rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  /* border-color: #4d9bfe; */\n}\n.subscribeBlock[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  margin-left: auto;\n  margin-right: auto;\n}\n.subscxribeBlockTitle[data-v-f2b6376c] {\n  font-size: large;\n  font-weight: bold;\n  color: #ffffff;\n}\n.subscribeArrowButton[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  border: none;\n  padding-left: 0.8rem;\n  padding-right: 0.8rem;\n  padding-top: 0.17rem;\n  padding-bottom: 0.15rem;\n  color: #ffffff;\n  border-radius: 0.1rem;\n}\n.pageMain[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n  background-color: #1e2e50;\n  padding-bottom: 5rem;\n  padding-top: 5rem;\n}\n.searchFormBody[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  background-color: #ffffff;\n  border-radius: 0.2rem;\n  padding: 1rem;\n  margin-left: auto;\n  margin-right: auto;\n}\n.searchForm[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: column;\n}\n.searchForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n}\n.searchFormButtom[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  width: 100%;\n  border-radius: 0.2rem;\n  border: none;\n  color: #ffffff;\n  font-weight: bold;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n}\n.pageLowerMain[data-v-f2b6376c] {\n  padding-top: 5rem;\n  padding-bottom: 5rem;\n  display: flex;\n  justify-content: center;\n}\n.pageBottom[data-v-f2b6376c] {\n  /* display: flex;\n  flex-direction: row; */\n  /* columns: 2; */\n  display: grid;\n  grid-template-columns: 40% 60%;\n  margin-bottom: 5rem;\n}\n.addressSection[data-v-f2b6376c] {\n  margin-left: auto;\n  margin-right: auto;\n  width: 12.5rem;\n}\n.addressSection div[data-v-f2b6376c] {\n  margin-top: 0.5rem;\n  /* margin-top: 1rem; */\n}\n.addressSection img[data-v-f2b6376c] {\n  margin-right: 0.25rem;\n}\n.signUpFormBody[data-v-f2b6376c] {\n  width: 100%;\n}\n.signUpForm[data-v-f2b6376c] {\n  /* display: flex; */\n  /* flex-direction: row; */\n  -moz-columns: 2;\n       columns: 2;\n  width: 80%;\n}\n.signUpForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-bottom: 0.25rem;\n  width: 100%;\n}\n.signUpFormBody textarea[data-v-f2b6376c] {\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  width: 80%;\n  height: 100px;\n  /* padding: 12px 20px; */\n  box-sizing: border-box;\n  border-radius: 4px;\n  font-size: 16px;\n  /* resize: none; */\n}\n.icons[data-v-f2b6376c] {\n  width: 1.2rem;\n}\n.largeTextBody[data-v-f2b6376c] {\n  font-size: large;\n  font-weight: bold;\n}\n.fadedTextMedium[data-v-f2b6376c] {\n  color: grey;\n  width: 80%;\n}\n.linkText[data-v-f2b6376c] {\n  color: blue;\n}\n.marginLeft[data-v-f2b6376c] {\n  margin-left: 0.4rem;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.body[data-v-f2b6376c] {\n  /* display: grid;\n  grid-template-areas:\n    \"header header header header\"\n    \"left left right right\"\n    \"slim slim slim slim\"\n    \"footer footer footer footer\"; */\n}\n.pageHeader[data-v-f2b6376c] {\n  display: flex;\n  justify-content: flex-end;\n  padding-right: 10%;\n  background-color: #1e2e50;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.headerTab[data-v-f2b6376c] {\n  margin-right: 1rem;\n  color: #ffffff;\n}\n.tabSignUpButton[data-v-f2b6376c] {\n  background-color: #ffffff;\n  /* border: none; */\n  border: #4d9bfe solid 0.5px;\n  border-radius: 0.2rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  /* border-color: #4d9bfe; */\n}\n.subscribeBlock[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  margin-left: auto;\n  margin-right: auto;\n  width: 25rem;\n}\n.subscribeBlock input[data-v-f2b6376c] {\n  cursor: pointer;\n  border: 1px solid #ccc;\n  border-radius: 0.2rem;\n  padding-left: 0.5rem;\n}\n.subscxribeBlockTitle[data-v-f2b6376c] {\n  font-size: large;\n  font-weight: bold;\n  color: #ffffff;\n}\n.marginTop1[data-v-f2b6376c] {\n  margin-top: 1rem;\n}\n.subscribeArrowButton[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  border: none;\n  padding-left: 0.8rem;\n  padding-right: 0.8rem;\n  padding-top: 0.17rem;\n  padding-bottom: 0.15rem;\n  color: #ffffff;\n  border-radius: 0.1rem;\n}\n.pageMain[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n  background-color: #1e2e50;\n  padding-bottom: 5rem;\n  padding-top: 5rem;\n}\n.searchFormBody[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  background-color: #ffffff;\n  border-radius: 0.2rem;\n  padding: 1rem;\n  margin-left: auto;\n  margin-right: auto;\n}\n.searchForm[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: column;\n}\n.searchFormInputs[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n}\n.searchForm input[data-v-f2b6376c]:first-child {\n  border-top-left-radius: 0.2rem;\n  border-bottom-left-radius: 0.2rem;\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n  padding-left: 0.5rem;\n}\n.searchForm input[data-v-f2b6376c]:last-child {\n  border-top-right-radius: 0.2rem;\n  border-bottom-right-radius: 0.2rem;\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n  padding-left: 0.5rem;\n}\n.searchForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n}\n.searchFormButtom[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  width: 100%;\n  border-radius: 0.2rem;\n  border: none;\n  color: #ffffff;\n  font-weight: bold;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-top: 0.5rem;\n}\n.pageLowerMain[data-v-f2b6376c] {\n  padding-top: 5rem;\n  padding-bottom: 5rem;\n  text-align: center;\n}\n.pageBottom[data-v-f2b6376c] {\n  display: grid;\n  grid-template-columns: 40% 60%;\n  margin-bottom: 5rem;\n}\n.addressSection[data-v-f2b6376c] {\n  margin-left: auto;\n  margin-right: auto;\n  width: 12.5rem;\n}\n.addressSection div[data-v-f2b6376c] {\n  margin-top: 0.5rem;\n}\n.addressSection img[data-v-f2b6376c] {\n  margin-right: 0.25rem;\n}\n.signUpFormBody[data-v-f2b6376c] {\n  width: 100%;\n}\n.signUpForm[data-v-f2b6376c] {\n  -moz-columns: 2;\n       columns: 2;\n  width: 80%;\n}\n.signUpForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-bottom: 0.25rem;\n  width: 100%;\n}\n.signUpFormBody textarea[data-v-f2b6376c] {\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  width: 80%;\n  height: 100px;\n  box-sizing: border-box;\n  border-radius: 4px;\n  font-size: 16px;\n}\n.signUpFormButton[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  color: #ffffff;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  border: none;\n  border-radius: 0.1rem;\n  margin-top: 0.2rem;\n  font-size: small;\n}\n.icons[data-v-f2b6376c] {\n  width: 1.2rem;\n}\n.largeTextBody[data-v-f2b6376c] {\n  font-size: x-large;\n  font-weight: bold;\n  color: #293579;\n}\n.fadedTextMediumGrey[data-v-f2b6376c] {\n  color: grey;\n}\n.fadedTextMediumBlue[data-v-f2b6376c] {\n  color: #7184ad;\n}\n.linkText[data-v-f2b6376c] {\n  color: blue;\n}\n.marginLeft[data-v-f2b6376c] {\n  margin-left: 0.4rem;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28799,13 +28840,13 @@ var staticRenderFns = [
           _vm._v("Buy and sell cryptocurrency"),
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "fadedTextMedium" }, [
+        _c("div", { staticClass: "fadedTextMediumBlue" }, [
           _vm._v(
             "\n        Fast and secure way to purchace or exchange 150+ cryptocurrancies\n      "
           ),
         ]),
         _vm._v(" "),
-        _c("div", [
+        _c("div", { staticClass: "marginTop1" }, [
           _c("input", {
             attrs: { type: "text", placeholder: "Subscribe Now" },
           }),
@@ -28815,23 +28856,31 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "searchFormBody" }, [
-        _c("label", { staticClass: "fadedTextMedium" }, [_vm._v("Send")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "searchForm" }, [
-          _c("div", [
-            _c("input", { attrs: { type: "text", placeholder: "USD" } }),
-            _vm._v(" "),
-            _c("input", { attrs: { type: "text", placeholder: "0.021481C" } }),
+        _c("div", [
+          _c("label", { staticClass: "fadedTextMediumBlue" }, [_vm._v("Send")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "searchForm" }, [
+            _c("div", { staticClass: "searchFormInputs" }, [
+              _c("input", { attrs: { type: "text", placeholder: "USD" } }),
+              _vm._v(" "),
+              _c("input", {
+                attrs: { type: "text", placeholder: "0.021481C" },
+              }),
+            ]),
           ]),
-        ]),
-        _vm._v(" "),
-        _c("label", { staticClass: "fadedTextMedium" }, [_vm._v("Recive")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "searchForm" }, [
-          _c("div", [
-            _c("input", { attrs: { type: "text", placeholder: "BTC" } }),
-            _vm._v(" "),
-            _c("input", { attrs: { type: "text", placeholder: "0.021481C" } }),
+          _vm._v(" "),
+          _c("label", { staticClass: "fadedTextMediumBlue" }, [
+            _vm._v("Recive"),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "searchForm" }, [
+            _c("div", { staticClass: "searchFormInputs" }, [
+              _c("input", { attrs: { type: "text", placeholder: "BTC" } }),
+              _vm._v(" "),
+              _c("input", {
+                attrs: { type: "text", placeholder: "0.021481C" },
+              }),
+            ]),
           ]),
         ]),
         _vm._v(" "),
@@ -28855,14 +28904,14 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "pageLowerMain" }, [
       _c("div", [
-        _c("div", { staticClass: "fadedTextMedium" }, [
+        _c("div", { staticClass: "fadedTextMediumBlue" }, [
           _vm._v("Ask Questions"),
         ]),
       ]),
       _vm._v(" "),
       _c("div", [
         _c("div", { staticClass: "largeTextBody" }, [
-          _vm._v("Let ud hear from you directly!"),
+          _vm._v("Let us hear from you directly!"),
         ]),
       ]),
     ])
@@ -28892,7 +28941,11 @@ var staticRenderFns = [
         }),
       ]),
       _vm._v(" "),
-      _c("div", [_c("button", [_vm._v("Send Message")])]),
+      _c("div", [
+        _c("button", { staticClass: "signUpFormButton" }, [
+          _vm._v("Send Message"),
+        ]),
+      ]),
     ])
   },
 ]

@@ -10,27 +10,29 @@
     <div class="pageMain">
       <div class="subscribeBlock">
         <div class="subscxribeBlockTitle">Buy and sell cryptocurrency</div>
-        <div class="fadedTextMedium">
+        <div class="fadedTextMediumBlue">
           Fast and secure way to purchace or exchange 150+ cryptocurrancies
         </div>
-        <div>
+        <div class="marginTop1">
           <input type="text" placeholder="Subscribe Now" />
           <button class="subscribeArrowButton">-></button>
         </div>
       </div>
       <div class="searchFormBody">
-        <label class="fadedTextMedium">Send</label>
-        <div class="searchForm">
-          <div>
-            <input type="text" placeholder="USD" />
-            <input type="text" placeholder="0.021481C" />
+        <div>
+          <label class="fadedTextMediumBlue">Send</label>
+          <div class="searchForm">
+            <div class="searchFormInputs">
+              <input type="text" placeholder="USD" />
+              <input type="text" placeholder="0.021481C" />
+            </div>
           </div>
-        </div>
-        <label class="fadedTextMedium">Recive</label>
-        <div class="searchForm">
-          <div>
-            <input type="text" placeholder="BTC" />
-            <input type="text" placeholder="0.021481C" />
+          <label class="fadedTextMediumBlue">Recive</label>
+          <div class="searchForm">
+            <div class="searchFormInputs">
+              <input type="text" placeholder="BTC" />
+              <input type="text" placeholder="0.021481C" />
+            </div>
           </div>
         </div>
         <span class="fadedTextMedium">1USD - 0.0000000888 BTC</span>
@@ -42,10 +44,10 @@
     </div>
     <div class="pageLowerMain">
       <div>
-        <div class="fadedTextMedium">Ask Questions</div>
+        <div class="fadedTextMediumBlue">Ask Questions</div>
       </div>
       <div>
-        <div class="largeTextBody">Let ud hear from you directly!</div>
+        <div class="largeTextBody">Let us hear from you directly!</div>
       </div>
     </div>
     <div class="pageBottom">
@@ -76,7 +78,7 @@
           <textarea placeholder="Tell us what er can help you with!" />
         </div>
         <div>
-          <button>Send Message</button>
+          <button class="signUpFormButton">Send Message</button>
         </div>
       </div>
     </div>
@@ -120,11 +122,21 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  width: 25rem;
+}
+.subscribeBlock input {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  padding-left: 0.5rem;
 }
 .subscxribeBlockTitle {
   font-size: large;
   font-weight: bold;
   color: #ffffff;
+}
+.marginTop1 {
+  margin-top: 1rem;
 }
 .subscribeArrowButton {
   background-color: #4d9bfe;
@@ -157,11 +169,33 @@
   display: flex;
   flex-direction: column;
 }
-.searchForm input {
+.searchFormInputs {
+  display: flex;
+  flex-direction: row;
+}
+.searchForm input:first-child {
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
   cursor: pointer;
-  border-radius: 0.2rem;
   border: 1px solid #ccc;
   margin-bottom: 0.25rem;
+  width: 50%;
+  padding-left: 0.5rem;
+}
+.searchForm input:last-child {
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  margin-bottom: 0.25rem;
+  width: 50%;
+  padding-left: 0.5rem;
+}
+.searchForm input {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  margin-bottom: 0.25rem;
+  width: 50%;
 }
 .searchFormButtom {
   background-color: #4d9bfe;
@@ -172,17 +206,14 @@
   font-weight: bold;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
+  margin-top: 0.5rem;
 }
 .pageLowerMain {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .pageBottom {
-  /* display: flex;
-  flex-direction: row; */
-  /* columns: 2; */
   display: grid;
   grid-template-columns: 40% 60%;
   margin-bottom: 5rem;
@@ -194,7 +225,6 @@
 }
 .addressSection div {
   margin-top: 0.5rem;
-  /* margin-top: 1rem; */
 }
 .addressSection img {
   margin-right: 0.25rem;
@@ -203,8 +233,6 @@
   width: 100%;
 }
 .signUpForm {
-  /* display: flex; */
-  /* flex-direction: row; */
   columns: 2;
   width: 80%;
 }
@@ -227,22 +255,35 @@
   border: 1px solid #ccc;
   width: 80%;
   height: 100px;
-  /* padding: 12px 20px; */
   box-sizing: border-box;
   border-radius: 4px;
   font-size: 16px;
-  /* resize: none; */
+}
+.signUpFormButton {
+  background-color: #4d9bfe;
+  color: #ffffff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  border: none;
+  border-radius: 0.1rem;
+  margin-top: 0.2rem;
+  font-size: small;
 }
 .icons {
   width: 1.2rem;
 }
 .largeTextBody {
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
+  color: #293579;
 }
-.fadedTextMedium {
+.fadedTextMediumGrey {
   color: grey;
-  width: 80%;
+}
+.fadedTextMediumBlue {
+  color: #7184ad;
 }
 .linkText {
   color: blue;

@@ -24,6 +24,7 @@ body white colour - #ffffff
 
 dark blue font - #293579
 link blue colours - #4d9bfe
+light grey/blue font - #7184ad
 
 buttons - #2083fe
 
