@@ -5582,11 +5582,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 
 
 
@@ -5599,7 +5594,84 @@ __webpack_require__.r(__webpack_exports__);
       placeIcon: _Assets_placeIcon_png__WEBPACK_IMPORTED_MODULE_2__["default"]
     };
   },
-  methods: {}
+  methods: {
+    SignInClick: function SignInClick() {
+      this.$router.push("/signupform");
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SignUpForm.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SignUpForm.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      sent: false,
+      ContactForm: {
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: ""
+      }
+    };
+  },
+  methods: {
+    sendForm: function sendForm(e) {
+      var _this = this;
+
+      e.preventDefault();
+      console.log(this.ContactForm);
+      this.$axios.post("api/mailserver.php", querystring.stringify(this.ContactForm)).then(function (res) {
+        _this.sent = true;
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -5662,19 +5734,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Home */ "./resources/js/components/Home.vue");
+/* harmony import */ var _components_SignUpForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/SignUpForm */ "./resources/js/components/SignUpForm.vue");
+
+ // import { component } from 'vue/types/umd'
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_3__["default"]);
 var routes = [{
   path: '/',
   name: 'home',
   component: _components_Home__WEBPACK_IMPORTED_MODULE_0__["default"]
+}, {
+  path: '/signupform',
+  name: 'signUpForm',
+  component: _components_SignUpForm__WEBPACK_IMPORTED_MODULE_1__["default"]
 }];
-var router = new vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]({
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_3__["default"]({
   mode: 'history',
   routes: routes
 });
@@ -10771,7 +10850,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.body[data-v-f2b6376c] {\n  /* display: grid;\n  grid-template-areas:\n    \"header header header header\"\n    \"left left right right\"\n    \"slim slim slim slim\"\n    \"footer footer footer footer\"; */\n}\n.pageHeader[data-v-f2b6376c] {\n  display: flex;\n  justify-content: flex-end;\n  padding-right: 10%;\n  background-color: #1e2e50;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.headerTab[data-v-f2b6376c] {\n  margin-right: 1rem;\n  color: #ffffff;\n}\n.tabSignUpButton[data-v-f2b6376c] {\n  background-color: #ffffff;\n  /* border: none; */\n  border: #4d9bfe solid 0.5px;\n  border-radius: 0.2rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  /* border-color: #4d9bfe; */\n}\n.subscribeBlock[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  margin-left: auto;\n  margin-right: auto;\n  width: 25rem;\n}\n.subscribeBlock input[data-v-f2b6376c] {\n  cursor: pointer;\n  border: 1px solid #ccc;\n  border-radius: 0.2rem;\n  padding-left: 0.5rem;\n}\n.subscxribeBlockTitle[data-v-f2b6376c] {\n  font-size: large;\n  font-weight: bold;\n  color: #ffffff;\n}\n.marginTop1[data-v-f2b6376c] {\n  margin-top: 1rem;\n}\n.subscribeArrowButton[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  border: none;\n  padding-left: 0.8rem;\n  padding-right: 0.8rem;\n  padding-top: 0.17rem;\n  padding-bottom: 0.15rem;\n  color: #ffffff;\n  border-radius: 0.1rem;\n}\n.pageMain[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n  background-color: #1e2e50;\n  padding-bottom: 5rem;\n  padding-top: 5rem;\n}\n.searchFormBody[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  background-color: #ffffff;\n  border-radius: 0.2rem;\n  padding: 1rem;\n  margin-left: auto;\n  margin-right: auto;\n}\n.searchForm[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: column;\n}\n.searchFormInputs[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n}\n.searchForm input[data-v-f2b6376c]:first-child {\n  border-top-left-radius: 0.2rem;\n  border-bottom-left-radius: 0.2rem;\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n  padding-left: 0.5rem;\n}\n.searchForm input[data-v-f2b6376c]:last-child {\n  border-top-right-radius: 0.2rem;\n  border-bottom-right-radius: 0.2rem;\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n  padding-left: 0.5rem;\n}\n.searchForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n}\n.searchFormButtom[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  width: 100%;\n  border-radius: 0.2rem;\n  border: none;\n  color: #ffffff;\n  font-weight: bold;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-top: 0.5rem;\n}\n.pageLowerMain[data-v-f2b6376c] {\n  padding-top: 5rem;\n  padding-bottom: 5rem;\n  text-align: center;\n}\n.pageBottom[data-v-f2b6376c] {\n  display: grid;\n  grid-template-columns: 40% 60%;\n  margin-bottom: 5rem;\n}\n.addressSection[data-v-f2b6376c] {\n  margin-left: auto;\n  margin-right: auto;\n  width: 12.5rem;\n}\n.addressSection div[data-v-f2b6376c] {\n  margin-top: 0.5rem;\n}\n.addressSection img[data-v-f2b6376c] {\n  margin-right: 0.25rem;\n}\n.signUpFormBody[data-v-f2b6376c] {\n  width: 100%;\n}\n.signUpForm[data-v-f2b6376c] {\n  -moz-columns: 2;\n       columns: 2;\n  width: 80%;\n}\n.signUpForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-bottom: 0.25rem;\n  width: 100%;\n}\n.signUpFormBody textarea[data-v-f2b6376c] {\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  width: 80%;\n  height: 100px;\n  box-sizing: border-box;\n  border-radius: 4px;\n  font-size: 16px;\n}\n.signUpFormButton[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  color: #ffffff;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  border: none;\n  border-radius: 0.1rem;\n  margin-top: 0.2rem;\n  font-size: small;\n}\n.icons[data-v-f2b6376c] {\n  width: 1.2rem;\n}\n.largeTextBody[data-v-f2b6376c] {\n  font-size: x-large;\n  font-weight: bold;\n  color: #293579;\n}\n.fadedTextMediumGrey[data-v-f2b6376c] {\n  color: grey;\n}\n.fadedTextMediumBlue[data-v-f2b6376c] {\n  color: #7184ad;\n}\n.linkText[data-v-f2b6376c] {\n  color: blue;\n}\n.marginLeft[data-v-f2b6376c] {\n  margin-left: 0.4rem;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.body[data-v-f2b6376c] {\n}\n.pageHeader[data-v-f2b6376c] {\n  display: flex;\n  justify-content: flex-end;\n  padding-right: 10%;\n  background-color: #1e2e50;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.headerTab[data-v-f2b6376c] {\n  margin-right: 1rem;\n  color: #ffffff;\n}\n.tabSignUpButton[data-v-f2b6376c] {\n  background-color: #ffffff;\n  border: #4d9bfe solid 0.5px;\n  border-radius: 0.2rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n}\n.subscribeBlock[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  margin-left: auto;\n  margin-right: auto;\n  width: 25rem;\n}\n.subscribeBlock input[data-v-f2b6376c] {\n  cursor: pointer;\n  border: 1px solid #ccc;\n  border-radius: 0.2rem;\n  padding-left: 0.5rem;\n}\n.subscxribeBlockTitle[data-v-f2b6376c] {\n  font-size: large;\n  font-weight: bold;\n  color: #ffffff;\n}\n.marginTop1[data-v-f2b6376c] {\n  margin-top: 1rem;\n}\n.subscribeArrowButton[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  border: none;\n  padding-left: 0.8rem;\n  padding-right: 0.8rem;\n  padding-top: 0.17rem;\n  padding-bottom: 0.15rem;\n  color: #ffffff;\n  border-radius: 0.1rem;\n}\n.pageMain[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n  background-color: #1e2e50;\n  padding-bottom: 5rem;\n  padding-top: 5rem;\n}\n.searchFormBody[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  background-color: #ffffff;\n  border-radius: 0.2rem;\n  padding: 1rem;\n  margin-left: auto;\n  margin-right: auto;\n}\n.searchForm[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: column;\n}\n.searchFormInputs[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n}\n.searchForm input[data-v-f2b6376c]:first-child {\n  border-top-left-radius: 0.2rem;\n  border-bottom-left-radius: 0.2rem;\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n  padding-left: 0.5rem;\n}\n.searchForm input[data-v-f2b6376c]:last-child {\n  border-top-right-radius: 0.2rem;\n  border-bottom-right-radius: 0.2rem;\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n  padding-left: 0.5rem;\n}\n.searchForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n}\n.searchFormButtom[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  width: 100%;\n  border-radius: 0.2rem;\n  border: none;\n  color: #ffffff;\n  font-weight: bold;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-top: 0.5rem;\n}\n.pageLowerMain[data-v-f2b6376c] {\n  padding-top: 5rem;\n  padding-bottom: 5rem;\n  text-align: center;\n}\n.pageBottom[data-v-f2b6376c] {\n  display: grid;\n  grid-template-columns: 40% 60%;\n  margin-bottom: 5rem;\n}\n.addressSection[data-v-f2b6376c] {\n  margin-left: auto;\n  margin-right: auto;\n  width: 12.5rem;\n}\n.addressSection div[data-v-f2b6376c] {\n  margin-top: 0.5rem;\n}\n.addressSection img[data-v-f2b6376c] {\n  margin-right: 0.25rem;\n}\n.signUpFormBody[data-v-f2b6376c] {\n  width: 100%;\n}\n.signUpForm[data-v-f2b6376c] {\n  -moz-columns: 2;\n       columns: 2;\n  width: 80%;\n}\n.signUpForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-bottom: 0.25rem;\n  width: 100%;\n}\n.signUpFormBody textarea[data-v-f2b6376c] {\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  width: 80%;\n  height: 100px;\n  box-sizing: border-box;\n  border-radius: 4px;\n  font-size: 16px;\n}\n.signUpFormButton[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  color: #ffffff;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  border: none;\n  border-radius: 0.1rem;\n  margin-top: 0.2rem;\n  font-size: small;\n}\n.icons[data-v-f2b6376c] {\n  width: 1.2rem;\n}\n.largeTextBody[data-v-f2b6376c] {\n  font-size: x-large;\n  font-weight: bold;\n  color: #293579;\n}\n.fadedTextMediumGrey[data-v-f2b6376c] {\n  color: grey;\n}\n.fadedTextMediumBlue[data-v-f2b6376c] {\n  color: #7184ad;\n}\n.linkText[data-v-f2b6376c] {\n  color: blue;\n}\n.marginLeft[data-v-f2b6376c] {\n  margin-left: 0.4rem;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28662,6 +28741,45 @@ component.options.__file = "resources/js/components/Home.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/SignUpForm.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/SignUpForm.vue ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _SignUpForm_vue_vue_type_template_id_0328d0c7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SignUpForm.vue?vue&type=template&id=0328d0c7& */ "./resources/js/components/SignUpForm.vue?vue&type=template&id=0328d0c7&");
+/* harmony import */ var _SignUpForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SignUpForm.vue?vue&type=script&lang=js& */ "./resources/js/components/SignUpForm.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _SignUpForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _SignUpForm_vue_vue_type_template_id_0328d0c7___WEBPACK_IMPORTED_MODULE_0__.render,
+  _SignUpForm_vue_vue_type_template_id_0328d0c7___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/SignUpForm.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/AppComponent.vue?vue&type=script&lang=js&":
 /*!***************************************************************************!*\
   !*** ./resources/js/components/AppComponent.vue?vue&type=script&lang=js& ***!
@@ -28691,6 +28809,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Home.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/SignUpForm.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/SignUpForm.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SignUpForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./SignUpForm.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SignUpForm.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SignUpForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -28741,6 +28875,23 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/SignUpForm.vue?vue&type=template&id=0328d0c7&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/SignUpForm.vue?vue&type=template&id=0328d0c7& ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SignUpForm_vue_vue_type_template_id_0328d0c7___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SignUpForm_vue_vue_type_template_id_0328d0c7___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SignUpForm_vue_vue_type_template_id_0328d0c7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./SignUpForm.vue?vue&type=template&id=0328d0c7& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SignUpForm.vue?vue&type=template&id=0328d0c7&");
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/AppComponent.vue?vue&type=template&id=cd268472&":
 /*!************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/AppComponent.vue?vue&type=template&id=cd268472& ***!
@@ -28783,11 +28934,33 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "body" }, [
+    _c("div", { staticClass: "pageHeader" }, [
+      _c("span", { staticClass: "headerTab" }, [_vm._v("Home")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "headerTab" }, [_vm._v("Price")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "headerTab" }, [_vm._v("App")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "headerTab" }, [_vm._v("Dashboard")]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "tabSignUpButton",
+          on: {
+            click: function ($event) {
+              $event.preventDefault()
+              return _vm.SignInClick()
+            },
+          },
+        },
+        [_vm._v("\n      Sign In\n    ")]
+      ),
+    ]),
+    _vm._v(" "),
     _vm._m(0),
     _vm._v(" "),
     _vm._m(1),
-    _vm._v(" "),
-    _vm._m(2),
     _vm._v(" "),
     _c("div", { staticClass: "pageBottom" }, [
       _c("div", { staticClass: "addressSection" }, [
@@ -28809,27 +28982,11 @@ var render = function () {
         ]),
       ]),
       _vm._v(" "),
-      _vm._m(3),
+      _vm._m(2),
     ]),
   ])
 }
 var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "pageHeader" }, [
-      _c("span", { staticClass: "headerTab" }, [_vm._v("Home")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "headerTab" }, [_vm._v("Price")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "headerTab" }, [_vm._v("App")]),
-      _vm._v(" "),
-      _c("span", { staticClass: "headerTab" }, [_vm._v("Dashboard")]),
-      _vm._v(" "),
-      _c("button", { staticClass: "tabSignUpButton" }, [_vm._v("Sign In")]),
-    ])
-  },
   function () {
     var _vm = this
     var _h = _vm.$createElement
@@ -28949,6 +29106,167 @@ var staticRenderFns = [
     ])
   },
 ]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SignUpForm.vue?vue&type=template&id=0328d0c7&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/SignUpForm.vue?vue&type=template&id=0328d0c7& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "request-a-callback-form" },
+    [
+      _c("transition", { attrs: { name: "fade", mode: "out-in" } }, [
+        _vm.sent
+          ? _c("div", [
+              _c("p", [
+                _vm._v(
+                  "Thanks for contacting us, we will get back to you shortly..."
+                ),
+              ]),
+            ])
+          : _vm._e(),
+      ]),
+      _vm._v(" "),
+      _c("form", { on: { submit: _vm.sendForm } }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.ContactForm.name,
+              expression: "ContactForm.name",
+            },
+          ],
+          attrs: { type: "text", placeholder: "Your Name" },
+          domProps: { value: _vm.ContactForm.name },
+          on: {
+            input: function ($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.ContactForm, "name", $event.target.value)
+            },
+          },
+        }),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.ContactForm.email,
+              expression: "ContactForm.email",
+            },
+          ],
+          attrs: { type: "text", placeholder: "Email Address" },
+          domProps: { value: _vm.ContactForm.email },
+          on: {
+            input: function ($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.ContactForm, "email", $event.target.value)
+            },
+          },
+        }),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.ContactForm.phone,
+              expression: "ContactForm.phone",
+            },
+          ],
+          attrs: { type: "text", placeholder: "Phone Number" },
+          domProps: { value: _vm.ContactForm.phone },
+          on: {
+            input: function ($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.ContactForm, "phone", $event.target.value)
+            },
+          },
+        }),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.ContactForm.subject,
+              expression: "ContactForm.subject",
+            },
+          ],
+          attrs: { type: "text", placeholder: "Subject" },
+          domProps: { value: _vm.ContactForm.subject },
+          on: {
+            input: function ($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.ContactForm, "subject", $event.target.value)
+            },
+          },
+        }),
+        _vm._v(" "),
+        _c("textarea", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.ContactForm.message,
+              expression: "ContactForm.message",
+            },
+          ],
+          staticClass: "form-control",
+          attrs: { rows: "8", cols: "80" },
+          domProps: { value: _vm.ContactForm.message },
+          on: {
+            input: function ($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.ContactForm, "message", $event.target.value)
+            },
+          },
+        }),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-primary",
+            attrs: { "data-text": "submit", type: "submit" },
+          },
+          [_vm._v("\n      Submit\n    ")]
+        ),
+      ]),
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 

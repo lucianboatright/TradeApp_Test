@@ -5,7 +5,9 @@
       <span class="headerTab">Price</span>
       <span class="headerTab">App</span>
       <span class="headerTab">Dashboard</span>
-      <button class="tabSignUpButton">Sign In</button>
+      <button @click.prevent="SignInClick()" class="tabSignUpButton">
+        Sign In
+      </button>
     </div>
     <div class="pageMain">
       <div class="subscribeBlock">
@@ -85,14 +87,9 @@
   </div>
 </template>
 
+
 <style scoped>
 .body {
-  /* display: grid;
-  grid-template-areas:
-    "header header header header"
-    "left left right right"
-    "slim slim slim slim"
-    "footer footer footer footer"; */
 }
 .pageHeader {
   display: flex;
@@ -108,14 +105,12 @@
 }
 .tabSignUpButton {
   background-color: #ffffff;
-  /* border: none; */
   border: #4d9bfe solid 0.5px;
   border-radius: 0.2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
-  /* border-color: #4d9bfe; */
 }
 .subscribeBlock {
   display: block;
@@ -308,6 +303,10 @@ export default {
     };
   },
 
-  methods: {},
+  methods: {
+    SignInClick() {
+      this.$router.push("/signupform");
+    },
+  },
 };
 </script>
