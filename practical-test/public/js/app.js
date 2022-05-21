@@ -5582,6 +5582,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -5589,12 +5610,28 @@ __webpack_require__.r(__webpack_exports__);
   name: "Home",
   data: function data() {
     return {
+      validation: false,
+      SendMessage: {
+        name: "",
+        email: "",
+        message: ""
+      },
       emailIcon: _Assets_emailIcon_png__WEBPACK_IMPORTED_MODULE_0__["default"],
       phoneIcon: _Assets_callIcon_png__WEBPACK_IMPORTED_MODULE_1__["default"],
       placeIcon: _Assets_placeIcon_png__WEBPACK_IMPORTED_MODULE_2__["default"]
     };
   },
   methods: {
+    sendMessage: function sendMessage(e) {
+      e.preventDefault();
+
+      if (this.SendMessage.name != "" && this.SendMessage.email != "" && this.SendMessage.message != "") {
+        console.log(this.SendMessage);
+        this.validation = false;
+      } else {
+        this.validation = true;
+      }
+    },
     SignInClick: function SignInClick() {
       this.$router.push("/signupform");
     }
@@ -5666,6 +5703,7 @@ __webpack_require__.r(__webpack_exports__);
 
       if (this.ContactForm.name != "" && this.ContactForm.email != "") {
         console.log(this.ContactForm);
+        this.varified = false;
         this.$axios.post("../../../config/mail.php", querystring.stringify(this.ContactForm)).then(function (res) {
           _this.sent = true;
         });
@@ -10853,7 +10891,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.body[data-v-f2b6376c] {\n}\n.pageHeader[data-v-f2b6376c] {\n  display: flex;\n  justify-content: flex-end;\n  padding-right: 10%;\n  background-color: #1e2e50;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.headerTab[data-v-f2b6376c] {\n  margin-right: 1rem;\n  color: #ffffff;\n}\n.tabSignUpButton[data-v-f2b6376c] {\n  background-color: #ffffff;\n  border: #4d9bfe solid 0.5px;\n  border-radius: 0.2rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n}\n.subscribeBlock[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  margin-left: auto;\n  margin-right: auto;\n  width: 25rem;\n}\n.subscribeBlock input[data-v-f2b6376c] {\n  cursor: pointer;\n  border: 1px solid #ccc;\n  border-radius: 0.2rem;\n  padding-left: 0.5rem;\n}\n.subscxribeBlockTitle[data-v-f2b6376c] {\n  font-size: large;\n  font-weight: bold;\n  color: #ffffff;\n}\n.marginTop1[data-v-f2b6376c] {\n  margin-top: 1rem;\n}\n.subscribeArrowButton[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  border: none;\n  padding-left: 0.8rem;\n  padding-right: 0.8rem;\n  padding-top: 0.17rem;\n  padding-bottom: 0.15rem;\n  color: #ffffff;\n  border-radius: 0.1rem;\n}\n.pageMain[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n  background-color: #1e2e50;\n  padding-bottom: 5rem;\n  padding-top: 5rem;\n}\n.searchFormBody[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  background-color: #ffffff;\n  border-radius: 0.2rem;\n  padding: 1rem;\n  margin-left: auto;\n  margin-right: auto;\n}\n.searchForm[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: column;\n}\n.searchFormInputs[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n}\n.searchForm input[data-v-f2b6376c]:first-child {\n  border-top-left-radius: 0.2rem;\n  border-bottom-left-radius: 0.2rem;\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n  padding-left: 0.5rem;\n}\n.searchForm input[data-v-f2b6376c]:last-child {\n  border-top-right-radius: 0.2rem;\n  border-bottom-right-radius: 0.2rem;\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n  padding-left: 0.5rem;\n}\n.searchForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n}\n.searchFormButtom[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  width: 100%;\n  border-radius: 0.2rem;\n  border: none;\n  color: #ffffff;\n  font-weight: bold;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-top: 0.5rem;\n}\n.pageLowerMain[data-v-f2b6376c] {\n  padding-top: 5rem;\n  padding-bottom: 5rem;\n  text-align: center;\n}\n.pageBottom[data-v-f2b6376c] {\n  display: grid;\n  grid-template-columns: 40% 60%;\n  margin-bottom: 5rem;\n}\n.addressSection[data-v-f2b6376c] {\n  margin-left: auto;\n  margin-right: auto;\n  width: 12.5rem;\n}\n.addressSection div[data-v-f2b6376c] {\n  margin-top: 0.5rem;\n}\n.addressSection img[data-v-f2b6376c] {\n  margin-right: 0.25rem;\n}\n.signUpFormBody[data-v-f2b6376c] {\n  width: 100%;\n}\n.signUpForm[data-v-f2b6376c] {\n  -moz-columns: 2;\n       columns: 2;\n  width: 80%;\n}\n.signUpForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-bottom: 0.25rem;\n  width: 100%;\n}\n.signUpFormBody textarea[data-v-f2b6376c] {\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  width: 80%;\n  height: 100px;\n  box-sizing: border-box;\n  border-radius: 4px;\n  font-size: 16px;\n}\n.signUpFormButton[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  color: #ffffff;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  border: none;\n  border-radius: 0.1rem;\n  margin-top: 0.2rem;\n  font-size: small;\n}\n.icons[data-v-f2b6376c] {\n  width: 1.2rem;\n}\n.largeTextBody[data-v-f2b6376c] {\n  font-size: x-large;\n  font-weight: bold;\n  color: #293579;\n}\n.fadedTextMediumGrey[data-v-f2b6376c] {\n  color: grey;\n}\n.fadedTextMediumBlue[data-v-f2b6376c] {\n  color: #7184ad;\n}\n.linkText[data-v-f2b6376c] {\n  color: blue;\n}\n.marginLeft[data-v-f2b6376c] {\n  margin-left: 0.4rem;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.body[data-v-f2b6376c] {\n}\n.pageHeader[data-v-f2b6376c] {\n  display: flex;\n  justify-content: flex-end;\n  padding-right: 10%;\n  background-color: #1e2e50;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.headerTab[data-v-f2b6376c] {\n  margin-right: 1rem;\n  color: #ffffff;\n}\n.tabSignUpButton[data-v-f2b6376c] {\n  background-color: #ffffff;\n  border: #4d9bfe solid 0.5px;\n  border-radius: 0.2rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n}\n.subscribeBlock[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  margin-left: auto;\n  margin-right: auto;\n  width: 25rem;\n}\n.subscribeBlock input[data-v-f2b6376c] {\n  cursor: pointer;\n  border: 1px solid #ccc;\n  border-radius: 0.2rem;\n  padding-left: 0.5rem;\n}\n.subscxribeBlockTitle[data-v-f2b6376c] {\n  font-size: large;\n  font-weight: bold;\n  color: #ffffff;\n}\n.marginTop1[data-v-f2b6376c] {\n  margin-top: 1rem;\n}\n.subscribeArrowButton[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  border: none;\n  padding-left: 0.8rem;\n  padding-right: 0.8rem;\n  padding-top: 0.17rem;\n  padding-bottom: 0.15rem;\n  color: #ffffff;\n  border-radius: 0.1rem;\n}\n.pageMain[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n  background-color: #1e2e50;\n  padding-bottom: 5rem;\n  padding-top: 5rem;\n}\n.searchFormBody[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  background-color: #ffffff;\n  border-radius: 0.2rem;\n  padding: 1rem;\n  margin-left: auto;\n  margin-right: auto;\n}\n.searchForm[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: column;\n}\n.searchFormInputs[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n}\n.searchForm input[data-v-f2b6376c]:first-child {\n  border-top-left-radius: 0.2rem;\n  border-bottom-left-radius: 0.2rem;\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n  padding-left: 0.5rem;\n}\n.searchForm input[data-v-f2b6376c]:last-child {\n  border-top-right-radius: 0.2rem;\n  border-bottom-right-radius: 0.2rem;\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n  padding-left: 0.5rem;\n}\n.searchForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n  width: 50%;\n}\n.searchFormButtom[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  width: 100%;\n  border-radius: 0.2rem;\n  border: none;\n  color: #ffffff;\n  font-weight: bold;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-top: 0.5rem;\n}\n.pageLowerMain[data-v-f2b6376c] {\n  padding-top: 5rem;\n  padding-bottom: 5rem;\n  text-align: center;\n}\n.pageBottom[data-v-f2b6376c] {\n  display: grid;\n  grid-template-columns: 40% 60%;\n  margin-bottom: 5rem;\n}\n.addressSection[data-v-f2b6376c] {\n  margin-left: auto;\n  margin-right: auto;\n  width: 12.5rem;\n}\n.addressSection div[data-v-f2b6376c] {\n  margin-top: 0.5rem;\n}\n.addressSection img[data-v-f2b6376c] {\n  margin-right: 0.25rem;\n}\n.signUpFormBody[data-v-f2b6376c] {\n  width: 100%;\n}\n.signUpForm[data-v-f2b6376c] {\n  -moz-columns: 2;\n       columns: 2;\n  width: 80%;\n}\n.signUpForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-bottom: 0.25rem;\n  width: 100%;\n}\n.signUpFormBody textarea[data-v-f2b6376c] {\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  width: 80%;\n  height: 100px;\n  box-sizing: border-box;\n  border-radius: 4px;\n  font-size: 16px;\n}\n.signUpFormButton[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  color: #ffffff;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  border: none;\n  border-radius: 0.1rem;\n  margin-top: 0.2rem;\n  font-size: small;\n}\n.alertMessage[data-v-f2b6376c] {\n  font-size: large;\n  color: crimson;\n}\n.icons[data-v-f2b6376c] {\n  width: 1.2rem;\n}\n.largeTextBody[data-v-f2b6376c] {\n  font-size: x-large;\n  font-weight: bold;\n  color: #293579;\n}\n.fadedTextMediumGrey[data-v-f2b6376c] {\n  color: grey;\n}\n.fadedTextMediumBlue[data-v-f2b6376c] {\n  color: #7184ad;\n}\n.linkText[data-v-f2b6376c] {\n  color: blue;\n}\n.marginLeft[data-v-f2b6376c] {\n  margin-left: 0.4rem;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28985,7 +29023,110 @@ var render = function () {
         ]),
       ]),
       _vm._v(" "),
-      _vm._m(2),
+      _c(
+        "form",
+        { staticClass: "signUpFormBody", on: { submit: _vm.sendMessage } },
+        [
+          _c("div", { staticClass: "signUpForm" }, [
+            _c("div", [
+              _c("div", { staticClass: "fadedTextMedium" }, [
+                _vm._v("Full name"),
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.SendMessage.name,
+                    expression: "SendMessage.name",
+                  },
+                ],
+                attrs: { type: "text", placeholder: "Full Name" },
+                domProps: { value: _vm.SendMessage.name },
+                on: {
+                  input: function ($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.SendMessage, "name", $event.target.value)
+                  },
+                },
+              }),
+            ]),
+            _vm._v(" "),
+            _c("div", [
+              _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Email")]),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.SendMessage.email,
+                    expression: "SendMessage.email",
+                  },
+                ],
+                attrs: { type: "text", placeholder: "hello@example.com" },
+                domProps: { value: _vm.SendMessage.email },
+                on: {
+                  input: function ($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.SendMessage, "email", $event.target.value)
+                  },
+                },
+              }),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", [
+            _c("textarea", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.SendMessage.message,
+                  expression: "SendMessage.message",
+                },
+              ],
+              attrs: {
+                type: "text",
+                placeholder: "Tell us what er can help you with!",
+              },
+              domProps: { value: _vm.SendMessage.message },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.SendMessage, "message", $event.target.value)
+                },
+              },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", [
+            _c(
+              "button",
+              {
+                staticClass: "signUpFormButton",
+                attrs: { "data-text": "submit", type: "submit" },
+              },
+              [_vm._v("\n          Send Message\n        ")]
+            ),
+            _vm._v(" "),
+            _vm.validation
+              ? _c("div", { staticClass: "alertMessage" }, [
+                  _vm._v(
+                    "\n          Please Enter Into all Fields, Thank You\n        "
+                  ),
+                ])
+              : _vm._e(),
+          ]),
+        ]
+      ),
     ]),
   ])
 }
@@ -29072,38 +29213,6 @@ var staticRenderFns = [
       _c("div", [
         _c("div", { staticClass: "largeTextBody" }, [
           _vm._v("Let us hear from you directly!"),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "signUpFormBody" }, [
-      _c("div", { staticClass: "signUpForm" }, [
-        _c("div", [
-          _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Full name")]),
-          _vm._v(" "),
-          _c("input", { attrs: { placeholder: "Full Name" } }),
-        ]),
-        _vm._v(" "),
-        _c("div", [
-          _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Email")]),
-          _vm._v(" "),
-          _c("input", { attrs: { placeholder: "hello@example.com" } }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", [
-        _c("textarea", {
-          attrs: { placeholder: "Tell us what er can help you with!" },
-        }),
-      ]),
-      _vm._v(" "),
-      _c("div", [
-        _c("button", { staticClass: "signUpFormButton" }, [
-          _vm._v("Send Message"),
         ]),
       ]),
     ])

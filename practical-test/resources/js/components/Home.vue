@@ -65,24 +65,41 @@
           <img class="icons" :src="emailIcon" /><span>hello@example.com</span>
         </div>
       </div>
-      <div class="signUpFormBody">
+      <form v-on:submit="sendMessage" class="signUpFormBody">
         <div class="signUpForm">
           <div>
             <div class="fadedTextMedium">Full name</div>
-            <input placeholder="Full Name" />
+            <input
+              type="text"
+              v-model="SendMessage.name"
+              placeholder="Full Name"
+            />
           </div>
           <div>
             <div class="fadedTextMedium">Email</div>
-            <input class="" placeholder="hello@example.com" />
+            <input
+              type="text"
+              v-model="SendMessage.email"
+              placeholder="hello@example.com"
+            />
           </div>
         </div>
         <div>
-          <textarea placeholder="Tell us what er can help you with!" />
+          <textarea
+            type="text"
+            v-model="SendMessage.message"
+            placeholder="Tell us what er can help you with!"
+          />
         </div>
         <div>
-          <button class="signUpFormButton">Send Message</button>
+          <button data-text="submit" type="submit" class="signUpFormButton">
+            Send Message
+          </button>
+          <div v-if="validation" class="alertMessage">
+            Please Enter Into all Fields, Thank You
+          </div>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </template>
@@ -266,6 +283,10 @@
   margin-top: 0.2rem;
   font-size: small;
 }
+.alertMessage {
+  font-size: large;
+  color: crimson;
+}
 .icons {
   width: 1.2rem;
 }
@@ -297,6 +318,12 @@ export default {
 
   data() {
     return {
+      validation: false,
+      SendMessage: {
+        name: "",
+        email: "",
+        message: "",
+      },
       emailIcon: emailIcon,
       phoneIcon: phoneIcon,
       placeIcon: placeIcon,
@@ -304,6 +331,19 @@ export default {
   },
 
   methods: {
+    sendMessage(e) {
+      e.preventDefault();
+      if (
+        this.SendMessage.name != "" &&
+        this.SendMessage.email != "" &&
+        this.SendMessage.message != ""
+      ) {
+        console.log(this.SendMessage);
+        this.validation = false;
+      } else {
+        this.validation = true;
+      }
+    },
     SignInClick() {
       this.$router.push("/signupform");
     },

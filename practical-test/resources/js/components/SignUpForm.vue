@@ -48,6 +48,7 @@ export default {
       e.preventDefault();
       if (this.ContactForm.name != "" && this.ContactForm.email != "") {
         console.log(this.ContactForm);
+        this.varified = false;
         this.$axios
           .post(
             "../../../config/mail.php",
