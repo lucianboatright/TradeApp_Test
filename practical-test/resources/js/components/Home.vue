@@ -1,11 +1,11 @@
 <template>
   <div class="body">
     <div class="pageHeader">
-      <span class="headerTab">Header</span>
-      <span class="headerTab">Header</span>
-      <span class="headerTab">Header</span>
-      <span class="headerTab">Header</span>
-      <button class="tabButton">Sign In</button>
+      <span class="headerTab">Home</span>
+      <span class="headerTab">Price</span>
+      <span class="headerTab">App</span>
+      <span class="headerTab">Dashboard</span>
+      <button class="tabSignUpButton">Sign In</button>
     </div>
     <div class="pageMain">
       <div class="subscribeBlock">
@@ -14,18 +14,19 @@
           Fast and secure way to purchace or exchange 150+ cryptocurrancies
         </div>
         <div>
-          <input type="text" placeholder="Subscribe Now" /> <button>-></button>
+          <input type="text" placeholder="Subscribe Now" />
+          <button class="subscribeArrowButton">-></button>
         </div>
       </div>
       <div class="searchFormBody">
-        <div class="fadedTextMedium">Send</div>
+        <label class="fadedTextMedium">Send</label>
         <div class="searchForm">
           <div>
             <input type="text" placeholder="USD" />
             <input type="text" placeholder="0.021481C" />
           </div>
         </div>
-        <div class="fadedTextMedium">Recive</div>
+        <label class="fadedTextMedium">Recive</label>
         <div class="searchForm">
           <div>
             <input type="text" placeholder="BTC" />
@@ -48,8 +49,8 @@
       </div>
     </div>
     <div class="pageBottom">
-      <div>
-        <div class="fadedTextMedium">Adress</div>
+      <div class="addressSection">
+        <div class="fadedTextMedium">Address</div>
         <div class="fadedTextMedium">
           <img class="icons" :src="placeIcon" /><span>Dartford, Kent</span>
         </div>
@@ -60,7 +61,7 @@
           <img class="icons" :src="emailIcon" /><span>hello@example.com</span>
         </div>
       </div>
-      <div>
+      <div class="signUpFormBody">
         <div class="signUpForm">
           <div>
             <div class="fadedTextMedium">Full name</div>
@@ -68,7 +69,7 @@
           </div>
           <div>
             <div class="fadedTextMedium">Email</div>
-            <input placeholder="hello@example.com" />
+            <input class="" placeholder="hello@example.com" />
           </div>
         </div>
         <div>
@@ -103,6 +104,17 @@
   margin-right: 1rem;
   color: #ffffff;
 }
+.tabSignUpButton {
+  background-color: #ffffff;
+  /* border: none; */
+  border: #4d9bfe solid 0.5px;
+  border-radius: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  /* border-color: #4d9bfe; */
+}
 .subscribeBlock {
   display: block;
   flex-direction: column;
@@ -113,6 +125,16 @@
   font-size: large;
   font-weight: bold;
   color: #ffffff;
+}
+.subscribeArrowButton {
+  background-color: #4d9bfe;
+  border: none;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-top: 0.17rem;
+  padding-bottom: 0.15rem;
+  color: #ffffff;
+  border-radius: 0.1rem;
 }
 .pageMain {
   display: flex;
@@ -135,6 +157,22 @@
   display: flex;
   flex-direction: column;
 }
+.searchForm input {
+  cursor: pointer;
+  border-radius: 0.2rem;
+  border: 1px solid #ccc;
+  margin-bottom: 0.25rem;
+}
+.searchFormButtom {
+  background-color: #4d9bfe;
+  width: 100%;
+  border-radius: 0.2rem;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
 .pageLowerMain {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -147,10 +185,53 @@
   /* columns: 2; */
   display: grid;
   grid-template-columns: 40% 60%;
+  margin-bottom: 5rem;
+}
+.addressSection {
+  margin-left: auto;
+  margin-right: auto;
+  width: 12.5rem;
+}
+.addressSection div {
+  margin-top: 0.5rem;
+  /* margin-top: 1rem; */
+}
+.addressSection img {
+  margin-right: 0.25rem;
+}
+.signUpFormBody {
+  width: 100%;
 }
 .signUpForm {
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
+  columns: 2;
+  width: 80%;
+}
+.signUpForm input {
+  cursor: pointer;
+  border-radius: 0.2rem;
+  border: 1px solid #ccc;
+  padding-left: 0.8rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.25rem;
+  width: 100%;
+}
+.signUpFormBody textarea {
+  padding-left: 0.8rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  border: 1px solid #ccc;
+  width: 80%;
+  height: 100px;
+  /* padding: 12px 20px; */
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  /* resize: none; */
 }
 .icons {
   width: 1.2rem;
@@ -165,6 +246,9 @@
 }
 .linkText {
   color: blue;
+}
+.marginLeft {
+  margin-left: 0.4rem;
 }
 </style>
 

@@ -5462,6 +5462,90 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -10646,7 +10730,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.body[data-v-f2b6376c] {\n  /* display: grid;\n  grid-template-areas:\n    \"header header header header\"\n    \"left left right right\"\n    \"slim slim slim slim\"\n    \"footer footer footer footer\"; */\n}\n.pageHeader[data-v-f2b6376c] {\n  display: flex;\n  justify-content: flex-end;\n  padding-right: 10%;\n  background-color: #1e2e50;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.headerTab[data-v-f2b6376c] {\n  margin-right: 1rem;\n  color: #ffffff;\n}\n.subscribeBlock[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  margin-left: auto;\n  margin-right: auto;\n}\n.subscxribeBlockTitle[data-v-f2b6376c] {\n  font-size: large;\n  font-weight: bold;\n  color: #ffffff;\n}\n.pageMain[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n  background-color: #1e2e50;\n  padding-bottom: 5rem;\n  padding-top: 5rem;\n}\n.searchFormBody[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  background-color: #ffffff;\n  border-radius: 0.2rem;\n  padding: 1rem;\n  margin-left: auto;\n  margin-right: auto;\n}\n.searchForm[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: column;\n}\n.pageLowerMain[data-v-f2b6376c] {\n  padding-top: 5rem;\n  padding-bottom: 5rem;\n  display: flex;\n  justify-content: center;\n}\n.pageBottom[data-v-f2b6376c] {\n  /* display: flex;\n  flex-direction: row; */\n  /* columns: 2; */\n  display: grid;\n  grid-template-columns: 40% 60%;\n}\n.signUpForm[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n}\n.icons[data-v-f2b6376c] {\n  width: 1.2rem;\n}\n.largeTextBody[data-v-f2b6376c] {\n  font-size: large;\n  font-weight: bold;\n}\n.fadedTextMedium[data-v-f2b6376c] {\n  color: grey;\n  width: 80%;\n}\n.linkText[data-v-f2b6376c] {\n  color: blue;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.body[data-v-f2b6376c] {\n  /* display: grid;\n  grid-template-areas:\n    \"header header header header\"\n    \"left left right right\"\n    \"slim slim slim slim\"\n    \"footer footer footer footer\"; */\n}\n.pageHeader[data-v-f2b6376c] {\n  display: flex;\n  justify-content: flex-end;\n  padding-right: 10%;\n  background-color: #1e2e50;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n}\n.headerTab[data-v-f2b6376c] {\n  margin-right: 1rem;\n  color: #ffffff;\n}\n.tabSignUpButton[data-v-f2b6376c] {\n  background-color: #ffffff;\n  /* border: none; */\n  border: #4d9bfe solid 0.5px;\n  border-radius: 0.2rem;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  /* border-color: #4d9bfe; */\n}\n.subscribeBlock[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  margin-left: auto;\n  margin-right: auto;\n}\n.subscxribeBlockTitle[data-v-f2b6376c] {\n  font-size: large;\n  font-weight: bold;\n  color: #ffffff;\n}\n.subscribeArrowButton[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  border: none;\n  padding-left: 0.8rem;\n  padding-right: 0.8rem;\n  padding-top: 0.17rem;\n  padding-bottom: 0.15rem;\n  color: #ffffff;\n  border-radius: 0.1rem;\n}\n.pageMain[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: row;\n  background-color: #1e2e50;\n  padding-bottom: 5rem;\n  padding-top: 5rem;\n}\n.searchFormBody[data-v-f2b6376c] {\n  display: block;\n  flex-direction: column;\n  background-color: #ffffff;\n  border-radius: 0.2rem;\n  padding: 1rem;\n  margin-left: auto;\n  margin-right: auto;\n}\n.searchForm[data-v-f2b6376c] {\n  display: flex;\n  flex-direction: column;\n}\n.searchForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  margin-bottom: 0.25rem;\n}\n.searchFormButtom[data-v-f2b6376c] {\n  background-color: #4d9bfe;\n  width: 100%;\n  border-radius: 0.2rem;\n  border: none;\n  color: #ffffff;\n  font-weight: bold;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n}\n.pageLowerMain[data-v-f2b6376c] {\n  padding-top: 5rem;\n  padding-bottom: 5rem;\n  display: flex;\n  justify-content: center;\n}\n.pageBottom[data-v-f2b6376c] {\n  /* display: flex;\n  flex-direction: row; */\n  /* columns: 2; */\n  display: grid;\n  grid-template-columns: 40% 60%;\n  margin-bottom: 5rem;\n}\n.addressSection[data-v-f2b6376c] {\n  margin-left: auto;\n  margin-right: auto;\n  width: 12.5rem;\n}\n.addressSection div[data-v-f2b6376c] {\n  margin-top: 0.5rem;\n  /* margin-top: 1rem; */\n}\n.addressSection img[data-v-f2b6376c] {\n  margin-right: 0.25rem;\n}\n.signUpFormBody[data-v-f2b6376c] {\n  width: 100%;\n}\n.signUpForm[data-v-f2b6376c] {\n  /* display: flex; */\n  /* flex-direction: row; */\n  -moz-columns: 2;\n       columns: 2;\n  width: 80%;\n}\n.signUpForm input[data-v-f2b6376c] {\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  margin-bottom: 0.25rem;\n  width: 100%;\n}\n.signUpFormBody textarea[data-v-f2b6376c] {\n  padding-left: 0.8rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n  cursor: pointer;\n  border-radius: 0.2rem;\n  border: 1px solid #ccc;\n  width: 80%;\n  height: 100px;\n  /* padding: 12px 20px; */\n  box-sizing: border-box;\n  border-radius: 4px;\n  font-size: 16px;\n  /* resize: none; */\n}\n.icons[data-v-f2b6376c] {\n  width: 1.2rem;\n}\n.largeTextBody[data-v-f2b6376c] {\n  font-size: large;\n  font-weight: bold;\n}\n.fadedTextMedium[data-v-f2b6376c] {\n  color: grey;\n  width: 80%;\n}\n.linkText[data-v-f2b6376c] {\n  color: blue;\n}\n.marginLeft[data-v-f2b6376c] {\n  margin-left: 0.4rem;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28665,8 +28749,8 @@ var render = function () {
     _vm._m(2),
     _vm._v(" "),
     _c("div", { staticClass: "pageBottom" }, [
-      _c("div", [
-        _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Adress")]),
+      _c("div", { staticClass: "addressSection" }, [
+        _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Address")]),
         _vm._v(" "),
         _c("div", { staticClass: "fadedTextMedium" }, [
           _c("img", { staticClass: "icons", attrs: { src: _vm.placeIcon } }),
@@ -28694,15 +28778,15 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "pageHeader" }, [
-      _c("span", { staticClass: "headerTab" }, [_vm._v("Header")]),
+      _c("span", { staticClass: "headerTab" }, [_vm._v("Home")]),
       _vm._v(" "),
-      _c("span", { staticClass: "headerTab" }, [_vm._v("Header")]),
+      _c("span", { staticClass: "headerTab" }, [_vm._v("Price")]),
       _vm._v(" "),
-      _c("span", { staticClass: "headerTab" }, [_vm._v("Header")]),
+      _c("span", { staticClass: "headerTab" }, [_vm._v("App")]),
       _vm._v(" "),
-      _c("span", { staticClass: "headerTab" }, [_vm._v("Header")]),
+      _c("span", { staticClass: "headerTab" }, [_vm._v("Dashboard")]),
       _vm._v(" "),
-      _c("button", { staticClass: "tabButton" }, [_vm._v("Sign In")]),
+      _c("button", { staticClass: "tabSignUpButton" }, [_vm._v("Sign In")]),
     ])
   },
   function () {
@@ -28726,12 +28810,12 @@ var staticRenderFns = [
             attrs: { type: "text", placeholder: "Subscribe Now" },
           }),
           _vm._v(" "),
-          _c("button", [_vm._v("->")]),
+          _c("button", { staticClass: "subscribeArrowButton" }, [_vm._v("->")]),
         ]),
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "searchFormBody" }, [
-        _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Send")]),
+        _c("label", { staticClass: "fadedTextMedium" }, [_vm._v("Send")]),
         _vm._v(" "),
         _c("div", { staticClass: "searchForm" }, [
           _c("div", [
@@ -28741,7 +28825,7 @@ var staticRenderFns = [
           ]),
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Recive")]),
+        _c("label", { staticClass: "fadedTextMedium" }, [_vm._v("Recive")]),
         _vm._v(" "),
         _c("div", { staticClass: "searchForm" }, [
           _c("div", [
@@ -28787,7 +28871,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
+    return _c("div", { staticClass: "signUpFormBody" }, [
       _c("div", { staticClass: "signUpForm" }, [
         _c("div", [
           _c("div", { staticClass: "fadedTextMedium" }, [_vm._v("Full name")]),
