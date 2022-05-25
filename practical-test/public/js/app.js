@@ -5556,6 +5556,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   methods: {
     sendMessage: function sendMessage(e) {
+      var _this = this;
+
       e.preventDefault();
       var formData = new FormData();
       formData.append("file", this.SendMessage);
@@ -5565,6 +5567,11 @@ __webpack_require__.r(__webpack_exports__);
         console.log("Email", this.SendMessage.email);
         console.log("Message", this.SendMessage.message);
         this.validation = false;
+        axios.post("/api/mail", this.SendMessage).then(function (response) {
+          _this.SendMessage = {};
+        })["catch"](function (error) {
+          console.log("error");
+        });
       } else {
         this.validation = true;
       }
@@ -5618,12 +5625,16 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _routes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes.js */ "./resources/js/routes.js");
 /* harmony import */ var _components_AppComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/AppComponent */ "./resources/js/components/AppComponent.vue");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 window.Vue = (__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js")["default"]);
 
-var app = new Vue({
+ // Vue.component('messageForm', require('./components/messageForm.vue'))
+// Vue.component('')
+
+var app = new vue__WEBPACK_IMPORTED_MODULE_2__["default"]({
   components: {
     AppComponent: _components_AppComponent__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
@@ -29380,8 +29391,16 @@ var render = function () {
       "form",
       {
         staticClass: "signUpFormBody",
-        attrs: { action: _vm.route("send.email"), method: "POST" },
-        on: { submit: _vm.sendMessage },
+        attrs: { method: "POST" },
+        on: {
+          submit: [
+            _vm.sendMessage,
+            function ($event) {
+              $event.preventDefault()
+              return _vm.sendMessage.apply(null, arguments)
+            },
+          ],
+        },
       },
       [
         _c("div", { staticClass: "signUpForm" }, [

@@ -14,6 +14,14 @@ export default {
         console.log("Email", this.SendMessage.email);
         console.log("Message", this.SendMessage.message);
         this.validation = false;
+        axios
+          .post("/api/mail", this.SendMessage)
+          .then((response) => {
+            this.SendMessage = {};
+          })
+          .catch((error) => {
+            console.log("error");
+          });
       } else {
         this.validation = true;
       }
@@ -39,8 +47,8 @@ export default {
   <div>
     <form
       v-on:submit="sendMessage"
+      @submit.prevent="sendMessage"
       class="signUpFormBody"
-      :action="route('send.email')"
       method="POST"
     >
       <div class="signUpForm">
