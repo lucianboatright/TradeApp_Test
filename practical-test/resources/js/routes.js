@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 // import { component } from 'vue/types/umd'
 import Home from './components/Home'
 import SignUpForm from './components/SignUpForm'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -17,6 +18,8 @@ const routes = [
     component: SignUpForm,
   }
 ]
+
+
 
 const router = new VueRouter({
     mode: 'history',

@@ -161,6 +161,7 @@ import phoneIcon from "../../Assets/callIcon.png";
 import placeIcon from "../../Assets/placeIcon.png";
 import SearchForm from "./searchForm.vue";
 import MessageForm from "./messageForm.vue";
+// import MessageForm from "../../views/welcome.blade.php";
 
 export default {
   name: "Home",

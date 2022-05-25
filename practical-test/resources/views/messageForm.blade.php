@@ -4,7 +4,7 @@ export default {
     sendMessage(e) {
       e.preventDefault();
       let formData = new FormData();
-      formData.append("file", this.SendMessage);
+      formData.append("file", this.name, this.email, this.message);
       if (
         this.SendMessage.name != "" &&
         this.SendMessage.email != "" &&
@@ -37,27 +37,26 @@ export default {
 
 <template>
   <div>
-    <form
-      v-on:submit="sendMessage"
-      class="signUpFormBody"
-      :action="route('send.email')"
-      method="POST"
-    >
+    <form v-on:submit="sendMessage" action="{{ route('send.email')}}" method="POST" class="signUpFormBody">
+        <!-- @csrf -->
       <div class="signUpForm">
         <div>
-          <div class="fadedTextMedium">Full name</div>
+          <label class="fadedTextMedium">Full name</label>
           <input
             type="text"
             v-model="SendMessage.name"
             placeholder="Full Name"
-          />
+            name="Name"
+            value="{{ old('name')}}"          />
         </div>
         <div>
-          <div class="fadedTextMedium">Email</div>
+          <label class="fadedTextMedium">Email</label>
           <input
             type="text"
             v-model="SendMessage.email"
             placeholder="hello@example.com"
+            name="Email"
+            value="{{ old('email')}}"
           />
         </div>
       </div>
@@ -66,6 +65,8 @@ export default {
           type="text"
           v-model="SendMessage.message"
           placeholder="Tell us what er can help you with!"
+          value="{{ old('message')}}"
+          name="Message"
         />
       </div>
       <div>

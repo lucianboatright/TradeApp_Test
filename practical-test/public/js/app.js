@@ -5455,6 +5455,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+ // import MessageForm from "../../views/welcome.blade.php";
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Home",
@@ -5556,9 +5557,13 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     sendMessage: function sendMessage(e) {
       e.preventDefault();
+      var formData = new FormData();
+      formData.append("file", this.SendMessage);
 
       if (this.SendMessage.name != "" && this.SendMessage.email != "" && this.SendMessage.message != "") {
-        console.log(this.SendMessage);
+        console.log("Name", this.SendMessage.name);
+        console.log("Email", this.SendMessage.email);
+        console.log("Message", this.SendMessage.message);
         this.validation = false;
       } else {
         this.validation = true;
@@ -29373,7 +29378,11 @@ var render = function () {
   return _c("div", [
     _c(
       "form",
-      { staticClass: "signUpFormBody", on: { submit: _vm.sendMessage } },
+      {
+        staticClass: "signUpFormBody",
+        attrs: { action: _vm.route("send.email"), method: "POST" },
+        on: { submit: _vm.sendMessage },
+      },
       [
         _c("div", { staticClass: "signUpForm" }, [
           _c("div", [
