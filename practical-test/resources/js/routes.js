@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 // import { component } from 'vue/types/umd'
-import Home from './components/Home'
-import SignUpForm from './components/SignUpForm'
+import Home from './pages/Home'
+import SignUpForm from './pages/SignUpForm'
 
 Vue.use(VueRouter)
 

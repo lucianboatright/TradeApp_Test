@@ -10,8 +10,12 @@
       <input
         type="text"
         v-model="ContactForm.email"
+        v-bind:class="{ 'is-valid': errorEmail }"
         placeholder="Email Address"
       />
+      <div class="invalid-feedback">
+        {{ errorEmail }}
+      </div>
       <button data-text="submit" type="submit" class="btn btn-primary">
         Submit
       </button>
