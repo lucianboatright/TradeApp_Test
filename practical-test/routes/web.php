@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use app\Http\Controllers\ContactController;
-
+use App\Http\Controllers\MailController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,3 +21,4 @@ Route::get('/', function () {
 
 Route::view('/messageForm', 'messageForm')->name('messageForm');
 Route::post('/send', [ContactController::class, 'send'])->name('send.email');
+Route::get('send-mail', [MailController::class, 'index']);

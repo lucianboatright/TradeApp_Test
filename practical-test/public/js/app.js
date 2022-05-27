@@ -5516,6 +5516,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
+      errorEmail: null,
       varified: false,
       sent: false,
       ContactForm: {
@@ -5564,17 +5565,18 @@ __webpack_require__.r(__webpack_exports__);
 
       e.preventDefault();
       var formData = new FormData();
-      formData.append("file", this.SendMessage);
+      formData.append("file", this.mailData);
 
-      if (this.SendMessage.name != "" && this.SendMessage.email != "" && this.SendMessage.message != "") {
-        console.log("Name", this.SendMessage.name);
-        console.log("Email", this.SendMessage.email);
-        console.log("Message", this.SendMessage.message);
+      if (this.mailData.name != "" && this.mailData.email != "" && this.mailData.message != "") {
+        console.log("Name", this.mailData.name);
+        console.log("Email", this.mailData.email);
+        console.log("Message", this.mailData.message);
         this.validation = false;
-        axios.post("/api/mail", this.SendMessage).then(function (response) {
-          _this.SendMessage = {};
+        axios.post("/api/mail", this.mailData).then(function (response) {
+          console.log("responce", response);
+          _this.mailData = {};
         })["catch"](function (error) {
-          console.log("error");
+          console.log("error"), error;
         });
       } else {
         this.validation = true;
@@ -5587,7 +5589,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       validation: false,
-      SendMessage: {
+      mailData: {
         name: "",
         email: "",
         message: ""
@@ -5628,9 +5630,14 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _routes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes.js */ "./resources/js/routes.js");
-/* harmony import */ var _pages_AppComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/AppComponent */ "./resources/js/pages/AppComponent.vue");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var vue_axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-axios */ "./node_modules/vue-axios/dist/vue-axios.esm.min.js");
+/* harmony import */ var _pages_AppComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/AppComponent */ "./resources/js/pages/AppComponent.vue");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
+
 
 
 window.Vue = (__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js")["default"]);
@@ -5638,9 +5645,11 @@ window.Vue = (__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js
  // Vue.component('messageForm', require('./components/messageForm.vue'))
 // Vue.component('')
 
-var app = new vue__WEBPACK_IMPORTED_MODULE_2__["default"]({
+vue__WEBPACK_IMPORTED_MODULE_4__["default"].use(vue_axios__WEBPACK_IMPORTED_MODULE_2__["default"], (axios__WEBPACK_IMPORTED_MODULE_1___default()));
+vue__WEBPACK_IMPORTED_MODULE_4__["default"].config.productionTip = false;
+var app = new vue__WEBPACK_IMPORTED_MODULE_4__["default"]({
   components: {
-    AppComponent: _pages_AppComponent__WEBPACK_IMPORTED_MODULE_1__["default"]
+    AppComponent: _pages_AppComponent__WEBPACK_IMPORTED_MODULE_3__["default"]
   },
   router: _routes_js__WEBPACK_IMPORTED_MODULE_0__["default"]
 }).$mount('#app');
@@ -28716,6 +28725,22 @@ module.exports = function (list, options) {
 
 /***/ }),
 
+/***/ "./node_modules/vue-axios/dist/vue-axios.esm.min.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/vue-axios/dist/vue-axios.esm.min.js ***!
+  \**********************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ plugin)
+/* harmony export */ });
+/* module decorator */ module = __webpack_require__.hmd(module);
+function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function plugin(e,n){if(!e.vueAxiosInstalled){var o=isAxiosLike(n)?migrateToMultipleInstances(n):n;if(isValidConfig(o)){var t=getVueVersion(e);if(t){var i=t<3?registerOnVue2:registerOnVue3;Object.keys(o).forEach((function(n){i(e,n,o[n])})),e.vueAxiosInstalled=!0}else console.error("[vue-axios] unknown Vue version")}else console.error("[vue-axios] configuration is invalid, expected options are either <axios_instance> or { <registration_key>: <axios_instance> }")}}function registerOnVue2(e,n,o){Object.defineProperty(e.prototype,n,{get:function(){return o}}),e[n]=o}function registerOnVue3(e,n,o){e.config.globalProperties[n]=o,e[n]=o}function isAxiosLike(e){return e&&"function"==typeof e.get&&"function"==typeof e.post}function migrateToMultipleInstances(e){return{axios:e,$http:e}}function isValidConfig(e){return"object"===_typeof(e)&&Object.keys(e).every((function(n){return isAxiosLike(e[n])}))}function getVueVersion(e){return e&&e.version&&Number(e.version.split(".")[0])}"object"==("undefined"==typeof exports?"undefined":_typeof(exports))?module.exports=plugin:"function"==typeof define&&__webpack_require__.amdO?define([],(function(){return plugin})):window.Vue&&window.axios&&window.Vue.use&&Vue.use(plugin,window.axios);
+
+/***/ }),
+
 /***/ "./resources/js/pages/AppComponent.vue":
 /*!*********************************************!*\
   !*** ./resources/js/pages/AppComponent.vue ***!
@@ -29423,18 +29448,18 @@ var render = function () {
                 {
                   name: "model",
                   rawName: "v-model",
-                  value: _vm.SendMessage.name,
-                  expression: "SendMessage.name",
+                  value: _vm.mailData.name,
+                  expression: "mailData.name",
                 },
               ],
               attrs: { type: "text", placeholder: "Full Name" },
-              domProps: { value: _vm.SendMessage.name },
+              domProps: { value: _vm.mailData.name },
               on: {
                 input: function ($event) {
                   if ($event.target.composing) {
                     return
                   }
-                  _vm.$set(_vm.SendMessage, "name", $event.target.value)
+                  _vm.$set(_vm.mailData, "name", $event.target.value)
                 },
               },
             }),
@@ -29448,18 +29473,18 @@ var render = function () {
                 {
                   name: "model",
                   rawName: "v-model",
-                  value: _vm.SendMessage.email,
-                  expression: "SendMessage.email",
+                  value: _vm.mailData.email,
+                  expression: "mailData.email",
                 },
               ],
               attrs: { type: "text", placeholder: "hello@example.com" },
-              domProps: { value: _vm.SendMessage.email },
+              domProps: { value: _vm.mailData.email },
               on: {
                 input: function ($event) {
                   if ($event.target.composing) {
                     return
                   }
-                  _vm.$set(_vm.SendMessage, "email", $event.target.value)
+                  _vm.$set(_vm.mailData, "email", $event.target.value)
                 },
               },
             }),
@@ -29472,21 +29497,21 @@ var render = function () {
               {
                 name: "model",
                 rawName: "v-model",
-                value: _vm.SendMessage.message,
-                expression: "SendMessage.message",
+                value: _vm.mailData.message,
+                expression: "mailData.message",
               },
             ],
             attrs: {
               type: "text",
               placeholder: "Tell us what er can help you with!",
             },
-            domProps: { value: _vm.SendMessage.message },
+            domProps: { value: _vm.mailData.message },
             on: {
               input: function ($event) {
                 if ($event.target.composing) {
                   return
                 }
-                _vm.$set(_vm.SendMessage, "message", $event.target.value)
+                _vm.$set(_vm.mailData, "message", $event.target.value)
               },
             },
           }),
@@ -44955,6 +44980,11 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/amd options */
+/******/ 	(() => {
+/******/ 		__webpack_require__.amdO = {};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/chunk loaded */
 /******/ 	(() => {
 /******/ 		var deferred = [];
@@ -45021,6 +45051,21 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/harmony module decorator */
+/******/ 	(() => {
+/******/ 		__webpack_require__.hmd = (module) => {
+/******/ 			module = Object.create(module);
+/******/ 			if (!module.children) module.children = [];
+/******/ 			Object.defineProperty(module, 'exports', {
+/******/ 				enumerable: true,
+/******/ 				set: () => {
+/******/ 					throw new Error('ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: ' + module.id);
+/******/ 				}
+/******/ 			});
+/******/ 			return module;
+/******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

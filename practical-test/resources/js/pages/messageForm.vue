@@ -4,23 +4,24 @@ export default {
     sendMessage(e) {
       e.preventDefault();
       let formData = new FormData();
-      formData.append("file", this.SendMessage);
+      formData.append("file", this.mailData);
       if (
-        this.SendMessage.name != "" &&
-        this.SendMessage.email != "" &&
-        this.SendMessage.message != ""
+        this.mailData.name != "" &&
+        this.mailData.email != "" &&
+        this.mailData.message != ""
       ) {
-        console.log("Name", this.SendMessage.name);
-        console.log("Email", this.SendMessage.email);
-        console.log("Message", this.SendMessage.message);
+        console.log("Name", this.mailData.name);
+        console.log("Email", this.mailData.email);
+        console.log("Message", this.mailData.message);
         this.validation = false;
         axios
-          .post("/api/mail", this.SendMessage)
+          .post("/api/mail", this.mailData)
           .then((response) => {
-            this.SendMessage = {};
+            console.log("responce", response);
+            this.mailData = {};
           })
           .catch((error) => {
-            console.log("error");
+            console.log("error"), error;
           });
       } else {
         this.validation = true;
@@ -33,7 +34,7 @@ export default {
   data() {
     return {
       validation: false,
-      SendMessage: {
+      mailData: {
         name: "",
         email: "",
         message: "",
@@ -54,17 +55,13 @@ export default {
       <div class="signUpForm">
         <div>
           <div class="fadedTextMedium">Full name</div>
-          <input
-            type="text"
-            v-model="SendMessage.name"
-            placeholder="Full Name"
-          />
+          <input type="text" v-model="mailData.name" placeholder="Full Name" />
         </div>
         <div>
           <div class="fadedTextMedium">Email</div>
           <input
             type="text"
-            v-model="SendMessage.email"
+            v-model="mailData.email"
             placeholder="hello@example.com"
           />
         </div>
@@ -72,7 +69,7 @@ export default {
       <div>
         <textarea
           type="text"
-          v-model="SendMessage.message"
+          v-model="mailData.message"
           placeholder="Tell us what er can help you with!"
         />
       </div>

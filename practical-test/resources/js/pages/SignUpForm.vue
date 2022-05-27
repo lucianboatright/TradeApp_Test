@@ -29,6 +29,7 @@
 export default {
   data() {
     return {
+      errorEmail: null,
       varified: false,
       sent: false,
       ContactForm: {
