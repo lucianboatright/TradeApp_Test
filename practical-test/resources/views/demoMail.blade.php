@@ -11,8 +11,8 @@
 <body>
 
 
-    <p>{{mailData['name']}}</p>
-    <p>{{mailData['message']}}</p>
+    <p>HEEEEE</p>
+    <p>HOOOOO</p>
 
      
 
